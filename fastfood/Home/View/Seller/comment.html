@@ -1,0 +1,37 @@
+<extend  name="Seller/base" />
+<block name="main">
+        <div class="mem_t">所有评价</div>
+        <table border="0" class="acc_tab" style="width:870px;" cellspacing="0" cellpadding="0">
+               <thead>
+                  <tr>
+                    <th>评价人</th>
+                    <th >配送员</th>                     
+                    <th>对店铺评论</th>
+                    <th>对配送员评论</th>                   
+                    <th>评分</th>
+                    <th>评论时间</th>   
+                    <th>操作</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <foreach name="list" item="me">
+                  <tr >
+                    <td>{$me.username}</td>
+                    <td>{$me.dname}</td>
+                    <td>{$me.shop_content}</td>                   
+                    <td>{$me.deli_content}</td>
+                    <td>{$me.score}</td>                    
+                    <td>{$me.addtime|date="Y-m-d",###}</td>
+                    <td id="button{$me.id}">    
+                      <button onclick="" class="btn btn-xs btn-danger" title="不显示">不显示</button>
+                    </td>
+                  </tr>
+                </foreach>
+              </tbody>
+         </table>
+               
+         
+</block>
+<block name="js">
+ 
+</block>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie6"><![endif]--><!--[if IE 7]><html class="ie7"><![endif]--><!--[if IE 8]><html class="ie8"><![endif]--><!--[if IE 9]><html class="ie9"><![endif]--><!--[if !IE]><!-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="//www.nuomi.com/static/common/img/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="renderer" content="webkit">
+
+
+		<title>美食美客</title>
+
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/global_20a287f.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common_38c5655.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/user_93e8dac.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/user_93e8dac.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome-ie7.min.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/forget.css">
+		
+
+		<!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/uni_login_merge_24c3446.css"/> -->
+	</head>
+
+	<body mon="page=login" class="gl-normal-screen">
+
+		<ul id="j-go-top" class="nav n-go-top" mon="area=right_anchor">
+			<li>
+				<a href="#" mon="element=gotop&position=0" class="item with-top-border go-top-2">
+					<span class="gotop-ico inner-ico">
+						<i class="fa fa-chevron-up fa-2x"></i>
+					</span>
+					<span class="inner-text">回到顶部</span>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" class="item" href="#">
+					<span class="question-ico inner-ico">
+						<i class="fa  fa-edit fa-2x"></i>
+					</span>
+					<span class="inner-text">问卷调查</span>
+				</a>
+			</li>
+		</ul>
+		<div class="p-login">
+			<div class="header">
+				<div class="wrap clearfix">
+				
+					<div class="logo">
+						<a href="//www.nuomi.com"></a>
+					</div>
+					<div class="login-text">找回密码</div>
+					<div class="reg-area">还没有美食美客帐号
+						<a href="__URL__/register" class="reg-btn">注册</a>
+					</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="wrap clearfix">
+	
+				  <div class="mod-forgot"> 
+				   <ul class="mod-sub-nav"> 
+				    <li class="mod-sub-list1">确认帐号</li> 
+				    <li class="mod-sub-list2">安全验证</li> 
+				    <li class="mod-sub-list3 list3-active">重置密码</li> 
+				   </ul>
+				   <div class="mod-step-detail"> 
+				    <p class="step-form-tip m_l80">您正在找回的帐号是：{$username}</p>
+				    <form action="__URL__/czPass" method="post" id="form-resetpwd" onsubmit="return doSubmit()"> 
+				    <input type="hidden" name="username" value="{$username}">
+				     <div class="pass-input-container clearfix"> 
+				      <label class="pass-input-title l-h40" for="password">新密码</label> 
+				      <input type="password" class="pass-input pass-input-forgot left" name="pass" id="password" value="" autocomplete="off" /> 
+				      <div class="pass-input-pwdmsg"> 
+				       <div class="pass-streng-wrapper" id="pass_pwdMsg"> 
+				        <span class="pass-tips-streng"> <span id="pass-tips-level"></span> </span> 
+				        <span id="pass-tips-title" class="left"></span> 
+				       </div> 
+				       <span class="pass-input-msg l-h40" id="info"></span> 
+				      </div>
+				     </div> 
+				     <div class="pass-input-container clearfix"> 
+				      <label class="pass-input-title l-h40" for="repassword">确认新密码</label> 
+				      <input type="password" class="pass-input pass-input-forgot left" name="qrpass" id="verifypwd" value="" autocomplete="off" /> 
+				      <!-- <span class="qrinfo">123</span>  -->
+				       <span class="pass-input-msg l-h40" id="qrinfo"></span> 
+				     </div> 
+				     <div class="m_l80"> 
+				    <!--   <input type="hidden" name="code" value="" /> 
+				      <input type="hidden" name="token" value="5d07b880f6fb7101291125913569aae7" /> 
+				      <input type="hidden" name="verifyvstr" value="" /> 
+				      <input type="hidden" name="authsid" value="lKCoBDchWvcht1LIWW1vQ5STxLPxhfMI" /> 
+				      <input type="hidden" name="vstr" value="" /> 
+				      <input type="hidden" name="encrypteuid" value="0bf01940daa0dabd96245759" />  -->
+				      <!-- <input type="hidden" name="username" value="呆小爽" />  -->
+				      <input class="pass-button-submit" type="submit" name="" value="确定" id="submit-resetpwd" /> 
+				     </div> 
+				    </form> 
+				   </div> 
+				  </div> 
+				  <div class="pass-tips hide" id="pass-tips"> 
+				   <span class="pwd-checklist-arrow"><em class="arrowa">◆</em><em class="arrowb">◆</em></span> 
+				   <ul class="pass-tips-content"> 
+				    <li id="pwdLen" class="pass-tips-content-item">长度为6~14个字符</li> 
+				    <li id="pwdCha" class="pass-tips-content-item">支持数字,大小写字母和标点符号</li> 
+				    <li id="pwdSpa" class="pass-tips-content-item">不允许有空格</li> 
+				   </ul> 
+				  </div> 
+ 
+				</div>
+			</div>
+		</div>
+		<div class="w-footer-mini" alog-alias="bainuo-order-footermini" alog-group="bainuo-order-footermini">
+			<div class="wrap">
+				<div class="links">
+					<a href="//www.nuomi.com/about" class="link">关于美食美客</a><span>|</span>
+					<a href="//www.nuomi.com/help" class="link">常见问题</a><span>|</span>
+					<a href="javascript:;" class="link" id="j-tttel">违规投诉&amp;廉政举报</a><span>|</span>
+					<a href="//www.nuomi.com/help/api" class="link">开放平台</a><span>|</span>
+					<a href="//www.nuomi.com/about/eula" class="link">用户协议</a><span>|</span>
+					客服电话：<span class="tel">4006-888-887</span>（每天9:00 - 22:00）
+				</div>
+				<div class="site-info">
+					<span class="copyright">&copy;</span>2015&nbsp;msmk.com&nbsp;
+					<a href="http://www.miitbeian.gov.cn" class="link" target="_blank">京ICP证030173号</a>
+					&nbsp;京公网安备11010802014106号
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="__PUBLIC__/js/jquery-1.8.2.min.js"></script>
+	<!-- <script type="text/javascript" src="__PUBLIC__/js/getVerifyCode.js"></script> -->
+	<script type="text/javascript">
+	
+		function doSubmit(){
+			 return checkPass()&&checkRPass();
+		}
+	
+		//检测密码
+	   
+	      function checkPass() {
+             var pass = $("input[name='pass']").val();
+             if (pass=="") {
+             	$("#info").html("请填写密码");
+                return false;
+             }else if(pass.match(/^(.+){6,18}$/)==null){
+                $("#info").html("请您输入6-18位密码");
+                return false;
+            }else if(pass.match(/^\d+\d+\d$/)){            
+                $("#info").html("密码不能全为数字");
+                return false;
+            }else{               
+                $("#info").html("");
+                return true;
+            }
+        }
+	     // 检测确认密码
+	      function checkRPass() {
+            var pass   = $("input[name='pass']").val();
+            var qrpass = $("input[name='qrpass']").val();
+
+            if (qrpass=="") {
+             	 $("#qrinfo").html("请您填写确认密码");
+	            return false;			
+				
+             }else if (pass!=qrpass) {              
+				$("#qrinfo").html("确认密码与密码不一致");
+	            return false;	
+            }else{
+            	$("#qrinfo").html("");
+                return true;
+            }
+         } 
+	
+	</script>
+</html>

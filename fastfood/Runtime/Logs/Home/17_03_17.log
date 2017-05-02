@@ -1,0 +1,1605 @@
+[ 2017-03-17T09:31:13+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '3'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='3',`uid`='3',`sid`='8',`addtime`='1489714273',`num`='3' WHERE `id` = 9 [ RunTime:0.0180s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:31:29+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '8' [ RunTime:0.0370s ]
+
+[ 2017-03-17T09:31:33+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '3'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('3','3','8','1489714293','1') [ RunTime:0.0290s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:31:34+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '3'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='3',`uid`='3',`sid`='8',`addtime`='1489714294',`num`='2' WHERE `id` = 88 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:31:35+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '3'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='3',`uid`='3',`sid`='8',`addtime`='1489714295',`num`='3' WHERE `id` = 88 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:31:37+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '3'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='3',`uid`='3',`sid`='8',`addtime`='1489714297',`num`='4' WHERE `id` = 88 [ RunTime:0.0330s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:31:39+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '4'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('4','3','8','1489714299','1') [ RunTime:0.0210s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 89 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:31:59+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '10' [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:32:46+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/delCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `collect` WHERE `uid` = '3' AND `sid` = '9' [ RunTime:0.0350s ]
+
+[ 2017-03-17T09:32:49+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `collect` (`sid`,`uid`,`addtime`) VALUES ('9','3','1489714369') [ RunTime:0.0100s ]
+SQL: SELECT * FROM `collect` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:32:50+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/delCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `collect` WHERE `uid` = '3' AND `sid` = '9' [ RunTime:0.0480s ]
+
+[ 2017-03-17T09:33:00+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `collect` (`sid`,`uid`,`addtime`) VALUES ('15','3','1489714380') [ RunTime:0.0270s ]
+SQL: SELECT * FROM `collect` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:33:02+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/delCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `collect` WHERE `uid` = '3' AND `sid` = '15' [ RunTime:0.0370s ]
+
+[ 2017-03-17T09:36:59+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('9','3','4','1489714619','1') [ RunTime:0.0350s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:04+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714624',`num`='2' WHERE `id` = 92 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:06+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714626',`num`='3' WHERE `id` = 92 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:07+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714627',`num`='4' WHERE `id` = 92 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:37:07+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714627',`num`='5' WHERE `id` = 92 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:08+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714628',`num`='6' WHERE `id` = 92 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:09+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714629',`num`='7' WHERE `id` = 92 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:10+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714630',`num`='8' WHERE `id` = 92 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:16+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '10'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('10','3','4','1489714636','1') [ RunTime:0.0360s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 93 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:18+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '10'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='10',`uid`='3',`sid`='4',`addtime`='1489714638',`num`='2' WHERE `id` = 93 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 93 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:30+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '4' [ RunTime:0.0020s ]
+
+[ 2017-03-17T09:37:31+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '4' [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:36+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '4' [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:40+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('9','3','4','1489714660','1') [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:37:42+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714662',`num`='2' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:44+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714664',`num`='3' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:45+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714665',`num`='4' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:45+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714665',`num`='5' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:46+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714666',`num`='6' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:47+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714667',`num`='7' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:48+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714668',`num`='8' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:48+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714668',`num`='9' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:49+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714669',`num`='10' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:49+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714669',`num`='11' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:49+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714669',`num`='12' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:49+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714669',`num`='13' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:50+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714670',`num`='14' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:50+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714670',`num`='15' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:50+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714670',`num`='16' WHERE `id` = 94 [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:50+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714670',`num`='17' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:51+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714671',`num`='18' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:51+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714671',`num`='19' WHERE `id` = 94 [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:51+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714671',`num`='20' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:51+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714671',`num`='21' WHERE `id` = 94 [ RunTime:0.0312s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:51+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714671',`num`='22' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:52+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714672',`num`='23' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:52+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714672',`num`='24' WHERE `id` = 94 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:52+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714672',`num`='25' WHERE `id` = 94 [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:53+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='9',`uid`='3',`sid`='4',`addtime`='1489714672',`num`='26' WHERE `id` = 94 [ RunTime:0.0468s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:37:59+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '4' [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:38:35+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('9','3','4','1489714715','1') [ RunTime:0.0340s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 95 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:38:40+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '10'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('10','3','4','1489714720','1') [ RunTime:0.0390s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 96 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:38:42+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '1'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('1','3','4','1489714722','1') [ RunTime:0.0330s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 97 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:38:58+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '4' [ RunTime:0.0020s ]
+
+[ 2017-03-17T09:39:00+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '4' [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:39:10+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('9','3','4','1489714750','1') [ RunTime:0.0468s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 98 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:39:12+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '4' AND `mid` = '1'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('1','3','4','1489714752','1') [ RunTime:0.0312s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 99 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:39:35+08:00 ] ::1 /0308/CLY/index.php/Home/Pay/addIndent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `indent` (`uid`,`sid`,`mid`,`order_num`,`num`,`remark`,`start_time`,`state`) VALUES ('3','4','1','2017031752515550','1','','1489714775','1') [ RunTime:0.0636s ]
+SQL: SELECT * FROM `menu` WHERE `sid` = '4' AND `id` = '1'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `menu` SET `sid`='4',`num`='101',`state`='1' WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `indent` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2017-03-17T09:39:35+08:00 ] ::1 /0308/CLY/index.php/Home/Pay/addIndent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `indent` (`uid`,`sid`,`mid`,`order_num`,`num`,`remark`,`start_time`,`state`) VALUES ('3','4','9','2017031752515550','1','','1489714775','1') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `sid` = '4' AND `id` = '9'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `menu` SET `sid`='4',`num`='102',`state`='1' WHERE `id` = 9 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `indent` WHERE `id` = 49 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:39:52+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '10' AND `mid` = '6'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('6','3','10','1489714792','1') [ RunTime:0.0312s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:40:01+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '10' AND `mid` = '6'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='6',`uid`='3',`sid`='10',`addtime`='1489714801',`num`='2' WHERE `id` = 101 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:40:09+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '10' AND `mid` = '21'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('21','3','10','1489714809','1') [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 102 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:40:12+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '10' AND `mid` = '6'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='6',`uid`='3',`sid`='10',`addtime`='1489714812',`num`='3' WHERE `id` = 101 [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:40:19+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '10' AND `mid` = '22'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('22','3','10','1489714819','1') [ RunTime:0.0312s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 103 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:40:22+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '10' AND `mid` = '23'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('23','3','10','1489714822','1') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 104 LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2017-03-17T09:40:23+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '10' AND `mid` = '6'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='6',`uid`='3',`sid`='10',`addtime`='1489714823',`num`='4' WHERE `id` = 101 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:41:09+08:00 ] ::1 /0308/CLY/index.php/Home/Pay/addIndent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `indent` (`uid`,`sid`,`mid`,`order_num`,`num`,`remark`,`start_time`,`state`) VALUES ('3','10','21','2017031756571005','1','','1489714869','1') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `sid` = '10' AND `id` = '21'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `menu` SET `sid`='10',`num`='1',`state`='1' WHERE `id` = 21 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `indent` WHERE `id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:41:09+08:00 ] ::1 /0308/CLY/index.php/Home/Pay/addIndent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `indent` (`uid`,`sid`,`mid`,`order_num`,`num`,`remark`,`start_time`,`state`) VALUES ('3','10','6','2017031756571005','4','','1489714869','1') [ RunTime:0.0482s ]
+SQL: SELECT * FROM `menu` WHERE `sid` = '10' AND `id` = '6'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `menu` SET `sid`='10',`num`='8',`state`='1' WHERE `id` = 6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `indent` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:41:09+08:00 ] ::1 /0308/CLY/index.php/Home/Pay/addIndent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `indent` (`uid`,`sid`,`mid`,`order_num`,`num`,`remark`,`start_time`,`state`) VALUES ('3','10','22','2017031756571005','1','','1489714869','1') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `sid` = '10' AND `id` = '22'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `menu` SET `sid`='10',`num`='1',`state`='1' WHERE `id` = 22 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `indent` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:41:09+08:00 ] ::1 /0308/CLY/index.php/Home/Pay/addIndent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `indent` (`uid`,`sid`,`mid`,`order_num`,`num`,`remark`,`start_time`,`state`) VALUES ('3','10','23','2017031756571005','1','','1489714869','1') [ RunTime:0.0352s ]
+SQL: SELECT * FROM `menu` WHERE `sid` = '10' AND `id` = '23'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `menu` SET `sid`='10',`num`='1',`state`='1' WHERE `id` = 23 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `indent` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2017-03-17T09:41:28+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '5' AND `mid` = '2'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('2','3','5','1489714888','1') [ RunTime:0.0468s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 105 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:41:33+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '5' [ RunTime:0.0468s ]
+
+[ 2017-03-17T09:41:34+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '5' AND `mid` = '2'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('2','3','5','1489714894','1') [ RunTime:0.0236s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 106 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T09:43:46+08:00 ] ::1 /0308/CLY/index.php/Home/User/delOrder?id=15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0090s ]
+SQL: DELETE FROM `indent` WHERE `id` = 15 [ RunTime:0.0490s ]
+
+[ 2017-03-17T09:44:31+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'zhangsan' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '7' ) [ RunTime:0.0260s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T09:44:36+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'zhangsan' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '4' ) [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:01:21+08:00 ] ::1 /0308/CLY/index.php/Home/User/delOrder?id=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0020s ]
+SQL: DELETE FROM `indent` WHERE `id` = 9 [ RunTime:0.0020s ]
+
+[ 2017-03-17T10:02:31+08:00 ] ::1 /0308/CLY/index.php/Home/User/delCollect?id=59
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0010s ]
+SQL: DELETE FROM `collect` WHERE `id` = 59 [ RunTime:0.0020s ]
+
+[ 2017-03-17T10:02:50+08:00 ] ::1 /0308/CLY/index.php/Home/User/delAll?id=59
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'zhangsan' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `collect` WHERE ( uid = '28' ) [ RunTime:0.0100s ]
+
+[ 2017-03-17T10:09:26+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716566',`num`='2' WHERE `id` = 25 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:09:27+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716567',`num`='3' WHERE `id` = 25 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:09:27+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716567',`num`='4' WHERE `id` = 25 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T10:09:28+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716568',`num`='5' WHERE `id` = 25 [ RunTime:0.0380s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T10:09:29+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '20' [ RunTime:0.0170s ]
+
+[ 2017-03-17T10:09:31+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '20' [ RunTime:0.0000s ]
+
+[ 2017-03-17T10:09:36+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cart` (`mid`,`uid`,`sid`,`addtime`,`num`) VALUES ('20','3','20','1489716576','1') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T10:09:37+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716577',`num`='2' WHERE `id` = 160 [ RunTime:0.0468s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T10:11:03+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716663',`num`='3' WHERE `id` = 160 [ RunTime:0.0490s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:11:04+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716664',`num`='4' WHERE `id` = 160 [ RunTime:0.0250s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T10:11:05+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716665',`num`='5' WHERE `id` = 160 [ RunTime:0.0340s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:11:07+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716667',`num`='6' WHERE `id` = 160 [ RunTime:0.0160s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T10:11:08+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716668',`num`='7' WHERE `id` = 160 [ RunTime:0.0240s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:11:09+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '20' AND `mid` = '20'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='20',`uid`='3',`sid`='20',`addtime`='1489716669',`num`='8' WHERE `id` = 160 [ RunTime:0.0420s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:11:11+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '20' [ RunTime:0.0020s ]
+
+[ 2017-03-17T10:11:26+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '4'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='4',`uid`='3',`sid`='8',`addtime`='1489716686',`num`='1' WHERE `id` = 89 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 89 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:11:28+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '4'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='4',`uid`='3',`sid`='8',`addtime`='1489716688',`num`='2' WHERE `id` = 89 [ RunTime:0.0360s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 89 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:11:30+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/addCart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cart` WHERE `uid` = '3' AND `sid` = '8' AND `mid` = '4'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\0308\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cart` SET `mid`='4',`uid`='3',`sid`='8',`addtime`='1489716690',`num`='3' WHERE `id` = 89 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cart` WHERE `id` = 89 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T10:11:32+08:00 ] ::1 /0308/CLY/index.php/Home/Detail/doClear
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='lilei123' )  [ RunTime:0.0010s ]
+SQL: DELETE FROM `cart` WHERE `uid` = '3' AND `sid` = '8' [ RunTime:0.0020s ]
+
+[ 2017-03-17T10:36:37+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'zhangsan' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '6' ) [ RunTime:0.0050s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0090s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:36:48+08:00 ] ::1 /0308/CLY/index.php/Home/User/updateComment
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 4' at line 1
+ [ SQL语句 ] : UPDATE `comment` SET  WHERE `id` = 4
+
+[ 2017-03-17T10:37:21+08:00 ] ::1 /0308/CLY/index.php/Home/User/updateComment
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 4' at line 1
+ [ SQL语句 ] : UPDATE `comment` SET  WHERE `id` = 4
+
+[ 2017-03-17T10:39:35+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'zhangsan' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '4' ) [ RunTime:0.0020s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 6 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `address` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T10:42:36+08:00 ] ::1 /0308/CLY/index.php/Home/User/index.html
+ERR: syntax error, unexpected '[', expecting '('
+
+[ 2017-03-17T10:57:52+08:00 ] ::1 /0308/CLY/index.php/Home/User/delAddr?id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: DELETE FROM `address` WHERE `id` = 12 [ RunTime:0.0530s ]
+
+[ 2017-03-17T10:58:05+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'zhangsan' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '6' ) [ RunTime:0.0030s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T14:21:45+08:00 ] ::1 /0308/CLY/index.php/Home/Delivery/served?id=35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0020s ]
+SQL: UPDATE `indent` SET `state`='4',`end_time`='1489731705' WHERE ( id = '35' ) [ RunTime:0.0020s ]
+
+[ 2017-03-17T14:52:51+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '4' ) [ RunTime:0.0030s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 6 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `address` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T14:52:54+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '6' ) [ RunTime:0.0020s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T14:53:04+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '6' ) [ RunTime:0.0020s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 7 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T14:53:08+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '7' ) [ RunTime:0.0360s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T14:53:13+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '4' ) [ RunTime:0.0020s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T15:06:10+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '6' ) [ RunTime:0.0030s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0420s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T15:06:16+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '4' ) [ RunTime:0.0300s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0460s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T15:06:31+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '4' ) [ RunTime:0.0020s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 7 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T15:06:34+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '7' ) [ RunTime:0.0020s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T15:06:42+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '6' ) [ RunTime:0.0030s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0110s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T15:07:00+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '4' ) [ RunTime:0.0020s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 7 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T15:08:00+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '7' ) [ RunTime:0.0030s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-17T15:08:04+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '4' ) [ RunTime:0.0010s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 6 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T15:08:11+08:00 ] ::1 /0308/CLY/index.php/Home/User/defaultAddr?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `uid` = '28' AND `state` = '0'  [ RunTime:0.0000s ]
+SQL: UPDATE `address` SET `state`='1' WHERE ( id = '6' ) [ RunTime:0.0020s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 4 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `address` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-17T16:54:56+08:00 ] ::1 /0308/CLY/index.php/Home/User/insertComment
+ERR: 1364:Field 'uid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `comment` (`sid`,`did`,`shop_content`,`deli_content`,`score`,`addtime`) VALUES ('8','10','top','top','3','1489740896')
+
+[ 2017-03-17T17:17:31+08:00 ] ::1 /0308/CLY/index.php/Home/User/User/uComment
+ERR: 非法操作:User
+
+[ 2017-03-17T17:17:34+08:00 ] ::1 /0308/CLY/index.php/Home/User/User/uComment
+ERR: 非法操作:User
+
+[ 2017-03-17T17:18:30+08:00 ] ::1 /0308/CLY/index.php/Home/User/User/uComment
+ERR: 非法操作:User
+

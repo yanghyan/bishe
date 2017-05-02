@@ -1,0 +1,100 @@
+<extend  name="Seller/base" />
+<block name="main">
+          <div class="mem_t">添加菜单</div>
+          <form action="insertMenu" method="post" enctype="multipart/form-data">
+            <table border="0" style="width:390px; font-size:14px; margin-top:30px;" cellspacing="0" cellpadding="0" >
+              <input type="hidden" name="sid" value="{$sid}">
+              <tr height="70">
+                <td>菜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</td>
+                <td><input type="text" value="" class="l_put" name="menu" /></td>
+              </tr>
+              <tr height="70">
+                <td>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价</td>
+                <td><input type="text" value="" class="l_put" name="price" /></td>
+              </tr>
+              <tr height="70">
+                <td>所属类别</td>
+                <td>
+                  <select name="label_id" class="l_select">
+                    <option value="">----请选择----</option>
+                    <foreach name="kind" item="k" >
+                      <option value="{$k.id}">{$k.tag}</option>
+                    </foreach>
+                  </select>
+                </td>
+              </tr>
+             
+              <tr height="70">
+                <td>图&nbsp;片</td>
+                <td>
+                 <div id="previewDoor">
+                    <img id="imgheadDoor" border="0" src="__PUBLIC__/images/photo_icon.png" width="90" height="90" onclick="$('#previewImgDoor').click();">
+                   </div>         
+                    <input type="file" onchange="previewImage(this,'Door')" style="display: none;" id="previewImgDoor" name="menu_pic">
+               </td>
+              </tr>
+              <tr height="60">
+                <td>&nbsp;</td>
+                <td><input type="submit" value="添加" class="log_btn" /></td>
+              </tr>
+            </table>
+            </form>  
+</block>
+<block name="js">
+    
+    <script type="text/javascript">
+               //图片上传预览    IE是用了滤镜。
+        function previewImage(file,name)
+        {
+          var MAXWIDTH  = 90; 
+          var MAXHEIGHT = 90;
+          var div = document.getElementById('preview'+name);
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img id=imghead'+name+'  onclick=$("#previewImg'+name+'").click()>';
+              var img = document.getElementById('imghead'+name);
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead'+name+'>';
+            var img = document.getElementById('imghead'+name);
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+
+    </script>
+</block>

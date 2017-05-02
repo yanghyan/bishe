@@ -1,0 +1,5 @@
+[ 2017-03-17T09:24:29+08:00 ] ::1 /0308/CLY/index.php/Admin/Public/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+

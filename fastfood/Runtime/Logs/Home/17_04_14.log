@@ -1,0 +1,107 @@
+[ 2017-04-14T10:46:32+08:00 ] ::1 /bishe/CLY/index.php/Home/Public/messageCode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `users` WHERE `phone` = '18234526356' LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2017-04-14T10:49:49+08:00 ] ::1 /bishe/CLY/index.php/Home/Public/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+
+[ 2017-04-14T10:52:13+08:00 ] ::1 /bishe/CLY/index.php/Home/Public/messageCode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `users` WHERE `phone` = '18334793213' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-14T10:56:15+08:00 ] ::1 /bishe/CLY/index.php/Home/Public/Public/forget3.html?_ijt=rpk9pmmi33bc7ar117tbdkbisf
+ERR: 非法操作:Public
+
+[ 2017-04-14T10:56:23+08:00 ] ::1 /bishe/CLY/index.php/Home/Public/messageCode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001757s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `users` WHERE `phone` = '18334793213' LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2017-04-14T11:21:42+08:00 ] ::1 /bishe/CLY/index.php/Home/Detail/addCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032272s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0062s ]
+NOTIC: [8] Undefined index: validate E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `collect` (`sid`,`uid`,`addtime`) VALUES ('10','3','1492140101') [ RunTime:0.2648s ]
+SQL: SELECT * FROM `collect` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-04-14T11:21:43+08:00 ] ::1 /bishe/CLY/index.php/Home/Detail/addCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.1027s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0143s ]
+NOTIC: [8] Undefined index: validate E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `collect` (`sid`,`uid`,`addtime`) VALUES ('10','3','1492140103') [ RunTime:0.1337s ]
+SQL: SELECT * FROM `collect` WHERE `id` = 72 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-04-14T11:21:47+08:00 ] ::1 /bishe/CLY/index.php/Home/Detail/delCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0224s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0085s ]
+SQL: DELETE FROM `collect` WHERE `uid` = '3' AND `sid` = '10' [ RunTime:0.1510s ]
+
+[ 2017-04-14T11:21:55+08:00 ] ::1 /bishe/CLY/index.php/Home/Detail/addCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0260s ]
+NOTIC: [8] Undefined index: validate E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `collect` (`sid`,`uid`,`addtime`) VALUES ('10','3','1492140115') [ RunTime:0.0786s ]
+SQL: SELECT * FROM `collect` WHERE `id` = 73 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-14T11:21:57+08:00 ] ::1 /bishe/CLY/index.php/Home/Detail/addCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0142s ]
+NOTIC: [8] Undefined index: validate E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `collect` (`sid`,`uid`,`addtime`) VALUES ('10','3','1492140117') [ RunTime:0.0795s ]
+SQL: SELECT * FROM `collect` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-04-14T11:21:58+08:00 ] ::1 /bishe/CLY/index.php/Home/Detail/addCollect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0064s ]
+NOTIC: [8] Undefined index: validate E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `collect` (`sid`,`uid`,`addtime`) VALUES ('10','3','1492140118') [ RunTime:0.0808s ]
+SQL: SELECT * FROM `collect` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-04-14T11:50:30+08:00 ] ::1 /bishe/CLY/index.php/Home/Pay/addIndent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002241s ]
+SQL: SHOW COLUMNS FROM `indent` [ RunTime:0.0272s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0078s ]
+NOTIC: [8] Undefined index: validate E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `indent` (`uid`,`sid`,`mid`,`order_num`,`num`,`remark`,`start_time`,`state`) VALUES ('3','9','5','2017041498514853','3','中辣','1492141829','1') [ RunTime:0.1678s ]
+SQL: SELECT * FROM `menu` WHERE `sid` = '9' AND `id` = '5'  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\phpstudy\WWW\bishe\CLY\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `menu` SET `sid`='9',`num`='148',`state`='1' WHERE `id` = 5 [ RunTime:0.1239s ]
+SQL: SELECT * FROM `indent` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0011s ]
+

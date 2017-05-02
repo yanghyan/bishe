@@ -1,0 +1,238 @@
+<extend name="Base/base" />
+<block name="content">
+	<!-- <pre></pre> -->
+	
+	<div class="page-body">
+		<div class="filter-bg">
+			<div class="filter-wrap" alog-alias="bainuo-channel-filter-wrap" alog-group="bainuo-channel-filter-wrap">
+				<div class="w-filter-ab-test">
+
+					<div class="w-filter-top-nav clearfix"  id="filter-top-nav"name="filter-top-nav"  mon="area=meishiBreadCrumb">
+						<form class="searchform" name="myform1" action="__CONTROLLER__/index" method="get">
+							<a class="quanbu" href="/all" mon="element=all">全部</a>
+							<span class="greater">&gt;</span>
+						    <div class="category-wrapper j-category-wrapper">
+								<a class="active-category j-active-category">美食
+									<span class="triggle"></span>
+								</a>								
+							</div> 
+						</form>	
+					</div>
+					<form class="searchform" name="myform1" action="__CONTROLLER__/index" method="get">
+						<!-- 保持条件 -->
+					 	<notempty name="kind">
+							<input type='hidden' name='kind' value="{$kind}"/>
+					 	</notempty>
+					 	<notempty name="area">
+							<input type='hidden' name='area' value="{$area}"/>
+					 	</notempty>
+					</form>
+					<div class="filter-wrapper">
+						<div class="normal-filter ">
+							<div class="w-filter-normal-ab  filter-list-ab clearfix" mon="area=filterCatg" alog-alias="bainuo-filter-section" alog-group="bainuo-filter-section">
+							<h5 class="filter-label-ab">分类</h5>
+							<span class="filter-all-ab">
+								<a href="javascript:;" class="w-filter-item-ab  item-all-auto-ab" mon="element=0&element_type=filter&position=1"  >
+									<span class="item-content   filter-active-all-ab ">全部</span>
+								</a>
+							</span>
+							<div class="j-filter-items-wrap-ab filter-items-wrap-ab">
+								<div class="j-filter-items-ab filter-items-ab filter-content-ab">
+								<foreach name="taglist1" item="tag1">
+									<a href="javascript:searchkind({$tag1.id});" class="w-filter-item-ab">
+										<span class="item{$tag1.tag} item-content">{$tag1.tag}</spgan>
+									</a>
+
+								</foreach>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="district-filter ">
+				<div class="w-district-ab filter-list-ab" alog-alias="bainuo-filter-district" alog-group="bainuo-filter-district">
+					<h5 class="filter-label-ab">区域</h5>
+					<div class="filter-all-ab" mon="area=filterAreaAll">
+						<a href="javascript:;"class="w-filter-item-ab  item-all-auto-ab"mon="element=0&element_type=filter&position=1"  >
+							<span class="item-content  filter-active-all-ab">全部</span>
+						</a>
+					</div>
+					<div class="district-tab">
+						<span index="0" class="tab-item j-district-tab-li j-district-tab-li0  selected">
+							<span class="tab-item-wrap">行政区
+								<span class="markup"></span>
+							</span>
+						</span>
+					</div>
+					<div style="clear: both;" mon="area=filterDistrict" index="0" class="district-cont-wrap j-district-cont j-district-cont0 filterDistrict  selected">
+						<div class="district-list-ab">
+							<foreach name="taglist2" item="tag2">
+								<a href="javascript:searcharea({$tag2.id},'{$tag2.tag}');" class="w-filter-item-ab">
+									<span class="item{$tag2.tag} item-content">{$tag2.tag}</span>
+								</a>
+							</foreach>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="normal-filter ">
+				<div class="w-filter-p-ab  filter-list-ab clearfix"mon="area=filterPrice" alog-alias="bainuo-filter-section" alog-group="bainuo-filter-section">
+					<h5 class="filter-label-ab">价格</h5>
+					<span class="filter-all-ab">
+						<a href="javascript:;"class="w-filter-item-ab  item-all-auto-ab"mon="element=0&element_type=filter&position=1"  >
+							<span class="item-content   filter-active-all-ab ">全部</span>
+						</a>
+					</span>
+					<span class="filter-items-ab filter-content-ab">
+						<foreach name="taglist3" item="tag3">
+							<a href="javascript:searchprice({$tag3.id},'{$tag3.tag}');" class="w-filter-item-ab"  >
+
+								<span class="item{$tag3.tag} item-content">{$tag3.tag}元</span>
+							</a>
+						</foreach>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w-sort-bar" id="j-sort-bar" alog-alias="bainuo-sort-bar" alog-group="bainuo-sort-bar">
+		<div class="bar-area" id="j-bar-area">
+			<span class="sort-area" mon="area=sort">
+				<a class="sort-default sort-default-active" rel="nofollow" href = "__CONTROLLER__/index">默认</a >
+				<a class="sort-item sort-down" rel="nofollow" href="javascript:sort('x',this);" title="点击按销量降序排序">销量
+					<i class="fa fa-arrow-circle-down"></i>
+				</a>
+				<a class="sort-item price-default price" rel="nofollow" href="javascript:sort('p',this)" title="点击按价格升序排序">价格
+					<i class="fa fa-arrow-circle-up"></i>
+				</a>
+				<!-- <a class="sort-item sort-up" rel="nofollow" href="__CONTROLLER__/index/sort/3" title="发布时间由近到远">最新发布 -->
+				<a class="sort-item sort-up" rel="nofollow" href="javascript:sort('t',this)" title="发布时间由近到远">最新发布
+					<i class="fa fa-arrow-circle-up"></i>
+				</a>
+			</span>
+				<div class="sortbar-right">
+					<div class="w-search" mon="area=search&element_type=nav">
+						<div class="search-wrap">
+							<form method="get" action="#" target="_blank" class="j-searchForm">
+							<input type="text" class="search-input placeholder j-searchInput" name="k" value="" placeholder="鲜花" autocomplete="off"/>
+							<input type="submit" class="btn search-btn j-search-btn" value="" mon="element=button">
+							<input type="text"  class="input-hidden j-input-hidden" name="rid" value="eee113f00a99aa3712d4a6532a1ba998">
+							</form>
+						</div>
+						<div class="hot-area" alog-alias="bainuo-header-hot-area" alog-group="bainuo-header-hot-area">
+						<a href="#" class="link" mon="element=hot">聚优惠餐饮</a>
+						<a href="#" class="link" mon="element=hot">中正天街</a>
+						<a href="#" class="link" mon="element=hot">生日蛋糕</a>
+						<a href="#" class="link" mon="element=hot">万达广场美食</a>
+						<a href="#" class="link" mon="element=hot">烤鱼</a>
+						</div>
+					</div>
+					<span class="page-area" mon="area=pageNum">
+						<a href="javascript:;" class="prev-btn prev-disable"><span>&nbsp;</span></a>
+						<span class="page-number">
+							<span class="current"><strong>1</strong></span>/48
+						</span>
+						<a href="#"class="next-btn"mon="element=next"><span>&nbsp;</span></a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="content-wrap" id="j-goods-area">
+		<div class="w-goods-area" data-index="1" mon="area=itemList"bn_box="itemList&position"alog-alias="bainuo-good-area" alog-group="bainuo-good-area">
+			<ul class="itemlist clearfix">
+			<foreach name="shoplist" item="shop">
+				<li class="row-first-item j-card ">
+					<a href="__MODULE__/Detail/index/id/{$shop.id}/url/2">
+						<div class="imgbox">
+							<div class="range-area">
+								<div class="range-bg"></div>
+								<div class="range-inner">
+									<i class="fa fa-map-marker"></i>
+									<if condition="($shop.address eq 1) ">小店区<elseif condition="($shop.address eq 2)"/>迎泽区<elseif condition="($shop.address eq 3)"/>杏花岭区<elseif condition="($shop.address eq 4)"/>尖草坪区<elseif condition="($shop.address eq 5)"/>万柏林区<elseif condition="($shop.address eq 6)"/>晋源区</if>{$shop.detail_add} 
+								</div>
+							</div>
+							<div class="borderbox">
+								<img data-original="#" alt="{$shop.shopname}" src="__PUBLIC__/Uploads/s_{$shop.door_pic}"style="display:inline;"/>
+							</div>
+						</div>
+					</a>
+					<div class="contentbox">
+						<a href="__MODULE__/Detail/index/id/{$shop.id}">
+							<div class="header clearfix">
+								<h4 class="title">【{$shop.shopname}】</h4>
+								<div class="collected">精选</div>
+							</div>	
+						</a>
+						<p>多种美味佳肴，免费提供WiFi、停车位，免费WiFi！</p>
+						<div class="add-info"></div>
+						<div class="pinfo clearfix">
+							<span class="ori-price">价格低至</span>
+							<span class="price">
+								<span class="moneyico">&yen;</span><empty name="shop.price">0<else />{$shop.price}</empty>
+							</span>
+							<!-- <span class="ori-price">价值<span class="price-line">&yen;<span>50</span></span></span> -->
+						</div>
+						<div class="footer clearfix">
+							<span class="comment"><empty name="shop.score">0<else /> {$shop.score}</empty>分</span>
+							<span class="sold">已售{$shop.num}</span>
+							<div class="bottom-border"></div>
+						</div>
+					</div>
+				</li>
+			</foreach>
+			</ul>
+		</div>
+		<div class="w-channel-pager">
+			<div class="pager-info">共<span class="good-total ml5 mr5">{$count}</span>条</div>
+			<div class="sabrosus">
+				{$pageinfo}
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="hover-overlay" class="hover-overlay"></div>
+		<form class="sortform" name="myform" action="__CONTROLLER__/index" method="get">
+		</form>
+</block>
+<block name="myscript">
+	<script type="text/javascript">
+
+
+	function sort(b,obj){
+		$(".sortform").append("<div class='category-wrapper j-category-wrapper'><input type='hidden' id='sort' name='sort' value='"+b+"'/></div>");
+		$(".sortform").submit();
+		$(".sort-default").removeClass("sort-default-active");
+		$(obj).addClass("sort-default-active");		
+	}
+	// $(".searchform").append("<div class='category-wrapper j-category-wrapper'><input type='hidden' id='search' name='search' value='"+a+"'/>&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' id='search1' name='search1' value='"+value+"'/></div>");
+	function searchkind(a){
+		var k = $(".searchform input[name='kind']").val();
+		if (typeof(k) == "undefined"){
+			$(".searchform").append("<input type='hidden' name='kind' value='"+a+"'/>");
+		}else{
+			$(".searchform input[name='kind']").replaceWith("<input type='hidden' name='kind' value='"+a+"'/>");  
+		}
+		$(".searchform").submit();
+	}
+	function searcharea(a,value){
+		var a = $(".searchform input[name='area']").val();
+		
+		if (typeof(a) == "undefined"){
+			$(".searchform").append("<input type='hidden' name='area' value='"+a+"'/>");
+		}else{
+			$(".searchform input[name='area']").replaceWith("<input type='hidden' name='area' value='"+a+"'/>");  
+		}
+		$(".searchform").submit();
+	}
+	function searchprice(a,value){
+		
+		$(".searchform").append("<input type='hidden' name='price' value='"+a+"'/>");
+		$(".searchform").submit();
+		// $(".item"+value).addClass(" filter-active-all-ab ");
+		
+	}
+	
+
+	</script>
+</block>

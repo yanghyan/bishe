@@ -1,0 +1,145 @@
+[ 2017-04-14T00:03:54+08:00 ] ::1 /bishe/CLY/index.php/Admin/Public/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+
+[ 2017-04-14T00:13:49+08:00 ] ::1 /bishe/CLY/index.php/Admin/Users/del?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0130s ]
+SQL: DELETE FROM `users` WHERE `id` = 1 [ RunTime:0.1253s ]
+
+[ 2017-04-14T00:37:49+08:00 ] ::1 /bishe/CLY/index.php/Admin/Shop/doShen?id=4&state=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0130s ]
+SQL: UPDATE `shop` SET `state`='0' WHERE `id` = 4 [ RunTime:0.1432s ]
+
+[ 2017-04-14T00:37:52+08:00 ] ::1 /bishe/CLY/index.php/Admin/Shop/doShen?id=4&state=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: UPDATE `shop` SET `state`='1' WHERE `id` = 4 [ RunTime:0.1216s ]
+
+[ 2017-04-14T00:37:55+08:00 ] ::1 /bishe/CLY/index.php/Admin/Shop/doShen?id=4&state=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.1743s ]
+SQL: UPDATE `shop` SET `state`='2' WHERE `id` = 4 [ RunTime:0.0829s ]
+
+[ 2017-04-14T00:37:57+08:00 ] ::1 /bishe/CLY/index.php/Admin/Shop/doShen?id=4&state=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: UPDATE `shop` SET `state`='0' WHERE `id` = 4 [ RunTime:0.1274s ]
+
+[ 2017-04-14T00:42:00+08:00 ] ::1 /bishe/CLY/index.php/Admin/Addr/mo?id=1&state=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0132s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 1 [ RunTime:0.1258s ]
+
+[ 2017-04-14T00:42:03+08:00 ] ::1 /bishe/CLY/index.php/Admin/Addr/mo?id=2&state=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0160s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 2 [ RunTime:0.0921s ]
+
+[ 2017-04-14T00:42:19+08:00 ] ::1 /bishe/CLY/index.php/Admin/Addr/mo?id=7&state=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0141s ]
+SQL: UPDATE `address` SET `state`='1' WHERE `id` = 7 [ RunTime:0.0992s ]
+
+[ 2017-04-14T00:42:22+08:00 ] ::1 /bishe/CLY/index.php/Admin/Addr/mo?id=9&state=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0128s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 9 [ RunTime:0.1232s ]
+
+[ 2017-04-14T00:42:24+08:00 ] ::1 /bishe/CLY/index.php/Admin/Addr/mo?id=10&state=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0132s ]
+SQL: UPDATE `address` SET `state`='0' WHERE `id` = 10 [ RunTime:0.1292s ]
+
+[ 2017-04-14T00:54:53+08:00 ] ::1 /bishe/CLY/index.php/Admin/Kind/edit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `kind` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-14T00:54:57+08:00 ] ::1 /bishe/CLY/index.php/Admin/Kind/addch
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001980s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `kind` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-04-14T01:00:06+08:00 ] ::1 /bishe/CLY/index.php/Admin/Kind/del?id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kind` WHERE `pid` = '14' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-04-14T01:03:20+08:00 ] ::1 /bishe/CLY/index.php/Admin/Slide/updateState?id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002109s ]
+SQL: SHOW COLUMNS FROM `slide` [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `slide` WHERE `state` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `slide` SET `state`='1' WHERE ( id=3 ) [ RunTime:0.1292s ]
+
+[ 2017-04-14T01:03:25+08:00 ] ::1 /bishe/CLY/index.php/Admin/Slide/updateState?id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `slide` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `slide` WHERE `state` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `slide` SET `state`='1' WHERE ( id=5 ) [ RunTime:0.1374s ]
+
+[ 2017-04-14T01:03:28+08:00 ] ::1 /bishe/CLY/index.php/Admin/Slide/updateState?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+SQL: SHOW COLUMNS FROM `slide` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `slide` WHERE `state` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `slide` SET `state`='1' WHERE ( id=6 ) [ RunTime:0.0972s ]
+
+[ 2017-04-14T09:18:21+08:00 ] ::1 /bishe/CLY/index.php/Admin/Public/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+
+[ 2017-04-14T09:18:37+08:00 ] ::1 /bishe/CLY/index.php/Admin/Public/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+
+[ 2017-04-14T10:21:39+08:00 ] ::1 /bishe/CLY/index.php/Admin/Menu/off?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0084s ]
+SQL: UPDATE `menu` SET `state`='0' WHERE `id` = 4 [ RunTime:0.2632s ]
+SQL: SELECT * FROM `menu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-04-14T10:39:38+08:00 ] ::1 /bishe/CLY/index.php/Admin/Link/edit?id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `link` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `link` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0008s ]
+

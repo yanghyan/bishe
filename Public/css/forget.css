@@ -1,0 +1,314 @@
+ .mod-forgot {
+    min-height: 500px;
+    height: auto;
+    height: 450px;
+    margin-left: 70px;
+    width: 910px;
+}
+.mod-sub-nav {
+    height: 34px;
+    background: url("../images/mod_sub_nav.png") no-repeat 0 0;
+    margin: 30px 0;
+    line-height: 34px;
+    color: #666;
+    font-size: 16px;
+    font-family: "Microsoft Yahei",\5fae\8f6f\96c5\9ed1,\9ed1\4f53;
+}
+.list1-active {
+    background: url("../images/sub_nav_1.png") no-repeat 0 0;
+    color: #2e82ff;
+}
+.list2-active {
+    background: url("../images/sub_nav_2.png") no-repeat 0 0;
+    color: #2e82ff;
+    margin-left: -10px;
+    padding-left: 78px;
+}
+.mod-sub-nav li {
+    float: left;
+    padding-left: 75px;
+}
+.mod-sub-list1 {
+    width: 175px;
+}
+.mod-sub-list2 {
+    width: 163px;
+}
+#foot {
+    text-align: center;
+    color: #7a77c8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mod-step-detail .step-email-info, .mod-step-detail .step-form-info {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: #2b78e4;
+}
+.pass-input-container {
+    margin-bottom: 20px;
+}
+input {
+    border: 1px solid #CCC;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+    vertical-align: middle;
+    font-size: 12px;
+    _margin-top: 1px;
+    padding: 7px 0 7px 8px;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    color: #333;
+    font-size: 14px;
+    background: url(../images/form_input_261.png) no-repeat left top;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    transition-property: all;
+    transition-duration: .3s;
+    outline: 0;
+    resize: none;
+    width: 253px;
+    float: left;
+}
+
+.pass-input-forgot {
+    display: block;
+    position: relative;
+    float: left;
+    height: 16px;
+    width: 328px;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    background: #fff;
+}
+.pass-input-error {
+    border: 1px solid #da1111;
+}
+.input-label-new1 {
+    top: 6px;
+    left: 10px;
+    font-size: 14px;
+}
+.pass-input-label {
+    position: absolute;
+    left: 13px;
+    top: 3px;
+    _top: 5px;
+    color: #ccc;
+    height: 28px;
+    line-height: 28px;
+    cursor: text;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    transition-property: all;
+    transition-duration: .3s;
+}
+.clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+.userName-clearbtn {
+    background: url(../images/close.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 8px;
+    top: 15px;
+    margin-left: -35px;
+    height: 12px;
+    width: 12px;
+    display: none;
+    transition: all ease-out .3s;
+}
+.pass-input-msg {
+    line-height: 32px;
+    float: left;
+    color: #da1111;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.pass-button-submit, .pass-button-timer2, .mod-btn1 {
+    height: 34px;
+    width: 109px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    background: url(../images/button_icon.png) no-repeat 0 0;
+    line-height: 32px;
+}
+.mod-step-detail .pass-button-submit {
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    background-image: none;
+    border-radius: 3px;
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+    background-color: #3f89ec;
+    width: 350px;
+}
+.mod-step-detail .vcode-container .vcode-input-width {
+    width: 156px;
+    margin-right: 0;
+}
+.mod-step-detail .vcode-container .vcode-img-big {
+    float: left;
+    width: 100px;
+    height: 38px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+.mod-step-detail .vcode-container .p-t13 {
+    padding-top: 13px;
+}
+.mod-step-detail .vcode-container .vcode-img-change {
+    padding-left: 10px;
+    display: block;
+    padding-top: 9px;
+    float: left;
+}
+.forgot-auth-container {
+    width: 520px;
+}
+.forgot-auth-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.pass-input-container, .m-b15 {
+    margin-bottom: 15px;
+}
+.form-2-label {
+    width: 70px;
+    font-size: 14px;
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    line-height: 32px;
+}
+.form-2-label {
+    width: 70px;
+    font-size: 14px;
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    line-height: 32px;
+}
+.form-2-content {
+    font-size: 14px;
+    position: relative;
+    float: left;
+}
+.verify-method {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.mod-step-detail .m-b-mobile {
+    margin-bottom: 8px;
+}
+.mod-step-detail .vcode-container .pass-input-new {
+    width: 220px;
+    height: 22px;
+    background: #fff;
+}
+.form-2-content .pass-input-msg {
+    clear: both;
+    margin-left: 0;
+    height: 32px;
+    width: 420px;
+}
+#pass-button-new1 {
+    width: 120px;
+    height: 36px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    color: #666;
+    line-height: 36px;
+}
+.pass-button-timer, .mod-btn2 {
+    height: 29px;
+    width: 107px;
+    color: #333;
+    cursor: pointer;
+    border: 0;
+    line-height: 29px;
+    text-align: center;
+    background: url(/static/passpc-base/img/ui/button_icon.png) no-repeat 0 -138px;
+    float: left;
+}
+.form-2-content .pass-button-timer {
+    margin: 0 0 0 10px;
+}
+.pass-input-msg {
+    line-height: 32px;
+    float: left;
+    color: #da1111;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.img-info {
+    padding-right: 5px;
+}
+.clearfix {
+    zoom: 1;
+}
+.img-info {
+    padding-right: 5px;
+}
+.mod-step-detail .step-tip li {
+    font-family: "宋体",Arial,Helvetica,STHeiti;
+}
+.mod-step-detail .step-form-tip {
+    color: #999;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.pass-input-title {
+    font-size: 14px;
+    width: 70px;
+    padding-right: 10px;
+    line-height: 32px;
+    float: left;
+    text-align: right;
+}
+li.list3-active {
+    background: url("../images/sub_nav_3.png") no-repeat 0 0;
+    color: #2e82ff;
+    margin-left: -12px;
+    padding-left: 78px;
+    width: 163px;
+}

@@ -1,0 +1,420 @@
+<extend name="Base/base"/>
+<block name="mycss">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc_sd_58f5089.css" />
+</block>
+<block name="content">
+    <div class="p-create-order" id="OrderSubmit">
+      <div class="w-order-nav" alog-alias="bainuo-order-nav" alog-group="bainuo-order-nav">
+        <a href="/" class="logo"></a>
+        <div class="nav-wrap">
+          <ul class="clearfix">
+            <li class="first current">
+              <span class="no">1</span>提交订单
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </li>
+            <li class="second ">
+              <span class="no">2</span>选择支付方式
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </li>
+            <li class="third ">
+              <span class="no">3</span>购买成功</li></ul>
+        </div>
+      </div>
+      <table class="table table-goods" id="j-tableGoods" cellpadding="0" cellspacing="0">
+        <tr>
+          <th class="first">商品</th>
+          <th width="110">单价</th>
+          <th width="110">数量
+          <!-- （限购<span class="tip-count">300</span>件） -->
+          </th>
+          <th width="110" class="last">小计</th>
+          <th>备注（自己填写）</th>
+        </tr>
+        <foreach name="cartlist" item="cart">
+        <tr class="j-row" data-dealid="" data-buycount="1" data-personmax="" data-min="1" data-max="300" data-discountMoney="0" data-paymoney="19600" data-totalMoney="19600">
+          <td class="vtop" width="35%">
+            <div class="title-area clearfix" title="">
+              <div class="img-wrap">
+                <a href="__MODULE__/Detail/index/id/{$cart.sid}" target="_blank">
+                  <img src="__PUBLIC__/Uploads/{$cart.menu_pic}" width="130" height="79"></a>
+              </div>
+              <div class="title-wrap">
+                <div class="title">
+                  <a href="__MODULE__/Detail/index/id/{$cart.sid}" target="_blank" class="link">{$cart.menu}</a></div>
+                <div class="attrs"></div>
+              </div>
+            </div>
+          </td>
+          <td class="font14">￥
+            <span class="j-singlePrice">{$cart.price}</span>
+          </td>
+          <td class="j-cell">
+            <div class="buycount-ctrl clearfix">
+             <!--  <a href="javascript:;" class="j-ctrl ctrl minus disabled">
+                <span class="horizontal"></span>
+              </a> -->
+              <input type="text" value="{$cart.num}" maxlength="10" autocomplete="off">
+              <!-- <a href="javascript:;" class="ctrl j-ctrl plus ">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </a> -->
+            </div>
+            <span class="err-wrap j-err-wrap"></span>
+          </td>
+          <td class="price font14">&yen;
+            <span class="j-sumPrice">{$cart.sum}</span>
+          </td>
+          <td class="price font14">
+            <input type="text" class="remark{$cart.number}" name="remark" style="border:1px solid #ddd; width:250px;height:50px;"/>
+          </td>
+        </tr>
+        </foreach>
+      </table>
+
+      <div class="final-price-area">应付总额：
+        <span class="sum">￥
+          <span class="price" id="j-finalPrice" data-price="19600">{$total}</span></span>
+      </div>
+    
+      <div class="clearfix page-button-wrap" alog-alias="bainuo-order-pagebuttonwrap" alog-group="bainuo-order-pagebuttonwrap">
+        <a href="__MODULE__/Detail/index/id/{$cart.sid}" class="link" mon="area=back&element_type=nav">返回上一步</a>
+        <a href="javascript:;" class="btn btn-primary" id="j-submitBtn" onclick="pay()">提交订单</a>
+      </div>
+      
+    </div>
+    <!--确认付款-->
+    <div class="p-create-order" id="PayOrder" style="display:none;">
+      <div class="w-order-nav" alog-alias="bainuo-order-nav" alog-group="bainuo-order-nav">
+        <a href="/" class="logo"></a>
+        <div class="nav-wrap">
+          <ul class="clearfix">
+            <li class="first">
+              <span class="no">1</span>提交订单
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </li>
+            <li class="second current">
+              <span class="no">2</span>选择支付方式
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </li>
+            <li class="third ">
+              <span class="no">3</span>购买成功</li></ul>
+        </div>
+      </div>
+      <!--订单-->
+      <div class="indent">
+       <span class="head">订单：</span>
+       <br/></br/>
+       <div class="total">应付总额：
+          <span class="sum">￥
+            <span class="j-sumPrice">{$total}</span>
+          </span>
+        </div>
+         <br/></br/>
+       <ul>
+        <foreach name="cartlist" item="cart">
+          <li>
+            <span class="title-wrap">            
+                <span class="title">
+                  {$cart.menu}
+                </span>
+                <span>{$cart.num}份</span>
+                <span style="float: right;margin-right: 20px;">应付金额：
+                  <span class="sum">￥
+                    <span class="j-sumPrice">{$cart.sum}</span>
+                  </span>
+                </span>
+            </span>
+          </li>
+        </foreach>
+        </ul>  
+      </div>
+      <!--支付方式-->
+      <div class="payschoice" style="zoom: 1;">
+        <h1 class="head">选择支付方式</h1>
+            <ul class="pays-list">
+              <li class="paylist"> 
+                <div class="top">
+                  <h3 class="top-left">第三方账户支付</h3>
+                  <a href="javascript: void(0);" class="view-switcher">                 
+                  <span class="tip tip-rec">以下支付使用百度钱包更安全</span>
+                  </a>
+                </div>
+                <div id="baidulbspay_view_pingtai" style="display: block;" class="pay-view">
+                  <!-- <div id="baidulbspay_form_pingtai" class="form"> -->
+                    <div class="pays">
+                      <div class="paylist">
+                        <div class="line" id="baidulbspay_pingtai_recent">
+                          <div class="pay" style="width:auto;margin-right:57px;position:relative">
+                            <input type="radio" id="baidulbspay2"  name="baidulbspay_pay_name" class="radio1" checked="checked"/>
+                            <label class="img selected" for="baidulbspay2" id="baidulbspay2_label" style="width:auto;">
+                              <div class="logo" style="background-position: 0px -2025px;"></div>
+                              <div class="ca-activity-desc ca-activity-desc-red">百度钱包支付更安全</div>
+                              <div class="kuaijie"></div>
+                            </label>
+                          </div>
+                          <div class="pay" style="position:relative">
+                            <input type="radio" id="baidulbspay3" name="baidulbspay_pay_name" class="radio1"/>
+                            <label class="img " for="baidulbspay3" id="baidulbspay3_label">
+                              <div class="logo" style="background-position: 0px -2079px;"></div>
+                              <div class="kuaijie"></div>
+                            </label>
+                          </div>
+                          <div class="pay" style="position:relative">
+                            <input type="radio" id="baidulbspay4" name="baidulbspay_pay_name" class="radio1" />
+                            <label class="img " for="baidulbspay4" id="baidulbspay4_label">
+                              <div class="logo" style="background-position: 0px -2107px;"></div>
+                              <div class="kuaijie"></div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+              </li>
+              <li class="paylist1">
+                <div class="top">
+                  <i class="fa  fa-caret-right fa-2x" id="show"></i>
+                  <h3 class="top-left">银行网银支付<span class="detail">(储蓄卡或者信用卡)</span></h3>
+                  <a href="javascript: void(0);" class="view-switcher">                 
+                  <span class="tip tip-rec">推荐开通网上银行的用户使用</span>
+                  </a>
+                </div>
+                <div id="baidulbspay_view_wangyin" style="display:none;"  class="pay-view">
+                  <div id="baidulbspay_form_wangyin" class="form">
+                    <div class="pays">
+                      <div class="paylist">
+                        <div class="main " id="baidulbspay_pays_other_wangyin">
+                          <div class="line">
+                            <div class="pay " style="position:relative">
+                              <input type="radio" id="baidulbspay9" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay9" id="baidulbspay9_label">
+                                <div class="logo" style="background-position: 0px -999px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" id="baidulbspay10" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay10" id="baidulbspay10_label">
+                                <div class="logo" style="background-position: 0px -1755px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" id="baidulbspay11" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay11" id="baidulbspay11_label">
+                                <div class="logo" style="background-position: 0px 0px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" id="baidulbspay12" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay12" id="baidulbspay12_label">
+                                <div class="logo" style="background-position: 0px -621px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="line">
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-BOCM" id="baidulbspay13" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay13" id="baidulbspay13_label">
+                                <div class="logo" style="background-position: 0px -54px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-CMB" id="baidulbspay14" name="baidulbspay_pay_name" class="radio1" />
+                              <label class="img" for="baidulbspay14" id="baidulbspay14_label">
+                                <div class="logo" style="background-position: 0px -1593px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-BOC" id="baidulbspay15" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay15" id="baidulbspay15_label">
+                                <div class="logo" style="background-position: 0px -1863px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-CEB" id="baidulbspay16" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay16" id="baidulbspay16_label">
+                                <div class="logo" style="background-position: 0px -1674px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="line">
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-ECITIC" id="baidulbspay17" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay17" id="baidulbspay17_label">
+                                <div class="logo" style="background-position: 0px -1620px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-SPDB" id="baidulbspay18" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay18" id="baidulbspay18_label">
+                                <div class="logo" style="background-position: 0px -675px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-CMBC" id="baidulbspay19" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay19" id="baidulbspay19_label">
+                                <div class="logo" style="background-position: 0px -1566px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-CIB" id="baidulbspay20" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay20" id="baidulbspay20_label">
+                                <div class="logo" style="background-position: 0px -1647px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="line">
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-PAB" id="baidulbspay21" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay21" id="baidulbspay21_label">
+                                <div class="logo" style="background-position: 0px -702px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-GDB" id="baidulbspay22" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay22" id="baidulbspay22_label">
+                                <div class="logo" style="background-position: 0px -1296px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-BCCB" id="baidulbspay23" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay23" id="baidulbspay23_label">
+                                <div class="logo" style="background-position: 0px -1890px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                            <div class="pay " style="position:relative">
+                              <input type="radio" value="BAIDU-BOSH" id="baidulbspay24" name="baidulbspay_pay_name" class="radio1"/>
+                              <label class="img" for="baidulbspay24" id="baidulbspay24_label">
+                                <div class="logo" style="background-position: 0px -486px;"></div>
+                                <div class="kuaijie"></div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="hr" style="display:none;"></div>
+          <foreach name="cartlist" item="cart">
+          <form class="myform{$cart.number}" action="" method="post">
+            <input type="hidden" name="uid" value="{$cart.uid}"/>
+            <input type="hidden" name="sid" value="{$cart.sid}"/>
+            <input type="hidden" name="mid" value="{$cart.mid}"/>
+            <input type="hidden" name="order_num" value="{$order_num}"/>
+            <input type="hidden" name="num" value="{$cart.num}"/>
+          </form>
+          </foreach>
+          <div id="qurenPay" class="clearfix page-button-wrap" alog-alias="bainuo-order-pagebuttonwrap" alog-group="bainuo-order-pagebuttonwrap">
+            <a href="javascript:;" class="btn btn-primary" id="j-submitBtn" onclick="addIndent({$number})">确认付款
+            </a>
+
+        </div>
+    </div>
+    <!--付款成功-->
+    <div class="p-create-order" id="SubmitSuccess" style="display: none;">
+      <div class="w-order-nav" alog-alias="bainuo-order-nav" alog-group="bainuo-order-nav">
+        <a href="/" class="logo"></a>
+        <div class="nav-wrap">
+          <ul class="clearfix">
+            <li class="first">
+              <span class="no">1</span>提交订单
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </li>
+            <li class="second">
+              <span class="no">2</span>选择支付方式
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </li>
+            <li class="third current">
+              <span class="no">3</span>购买成功</li></ul>
+        </div>
+      </div>
+      <div class="warning">         
+            <table border="0" style="width:1000px; text-align:center;" cellspacing="0" cellpadding="0">
+              <tr height="85">
+                <td style="font-size:18px;">
+                  感谢您在本店购物！您的订单已提交成功，请记住您的订单号: <font class="orderNum" color="#ff4e00">{$order_num}</font>
+                  <br/><br/>
+                  您的收货地址： <font color="#ff4e00">{$addr}</font>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-size:16px; font-family:'宋体'; padding:10px 0 20px 0;solid #b6b6b6;">
+                  您选定的配送方式为: <font color="#ff4e00">申通快递</font>； &nbsp; &nbsp;您选定的支付方式为: <font color="#ff4e00">银行卡</font>； &nbsp; &nbsp;您的付款金额为: <font color="#ff4e00">￥{$total}</font>
+
+                   <div style=" border-bottom:1px solid #ddd; " wdith="800px"></div>
+                </td>
+              </tr>              
+              <tr>
+                <td style="font-size:14px;padding:20px 0 30px 0; font-family:'宋体';">
+                  支付宝网站(www.alipay.com) 是国内先进的网上支付平台。<br/><br/>
+                    支付宝收款接口：在线即可开通，零预付，免年费，单笔阶梯费率，无流量限制。<br/>
+                    <a href="#" style="color:#ff4e00;">立即在线申请</a>
+                </td>
+              </tr>
+            </table>          
+        </div>
+      <div class="clearfix page-button-wrap" alog-alias="bainuo-order-pagebuttonwrap" alog-group="bainuo-order-pagebuttonwrap">
+        <a href="__MODULE__/Index/index"  id="fanhui" class="btn btn-primary">返回首页</a>
+      </div>
+    </div>
+</block>
+<block name="myscript">
+  <script type="text/javascript">
+    function pay(){
+      $("#OrderSubmit").hide();
+      $("#PayOrder").show();
+    }
+
+    $("#show").click(function(){
+      $("#baidulbspay_view_wangyin").toggle("show");
+      $(".hr").toggle("slow");
+    });
+
+    function addIndent(m){
+      for(var i=0 ;i<m; i++){
+        var remark = $(".remark"+i).val();
+        $(".myform"+i).append("<input type='hidden' name='remark' value='"+remark+"'/>");
+          $.ajax({
+          type:"POST",
+          url: "__CONTROLLER__/addIndent",
+          data:$(".myform"+i).serialize(),
+          dataType:"json",
+          success:function(res){
+            if(res){
+                $(".orderNum").html(res.order_num);
+                $("#PayOrder").hide();
+                $("#SubmitSuccess").show();
+            }else{
+              alert("下单失败！");
+            }
+          }
+        });
+      } 
+    }
+  </script>
+</block>

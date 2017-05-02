@@ -1,0 +1,112 @@
+<extend  name="Seller/base" />
+<block name="main">
+        <div class="mem_t">菜单信息</div>
+        <table border="0" class="acc_tab" style="width:870px;" cellspacing="0" cellpadding="0">
+               <thead>
+                  <tr>
+                    <th>菜品图</th>
+                    <th >ID</th>                     
+                    <th>菜名</th>
+                    <th>单价</th>                   
+                    <th>已售出</th>
+                    <th>所属分类</th>                    
+                    <th>状态</th>
+                    <th>添加时间</th>
+                    <th>操作</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <foreach name="list" item="me">
+                  <tr >
+                     <td><img src="__PUBLIC__/Uploads/s_{$me.menu_pic}"></td>
+                    <td>{$me.id}</td>
+                    <td>{$me.menu}</td>
+                    <td>￥{$me.price}</td>                   
+                    <td>{$me.num} 份</td>
+                    <td>{$me.label_id}</td>
+                    <td id="change{$me.id}"><if condition="$me.state eq 1 "> 在售<else/>已下架</if></td>
+                    <td>{$me.addtime|date="Y-m-d",###}</td>
+                    <td id="button{$me.id}">    
+                    <button onclick="doDel(this,{$me.id})" class="btn btn-xs btn-danger" title="删除">删除</button>                 
+                    <if condition="$me.state eq 1 "> 
+                      <!-- <button onclick="edit()" class="btn btn-xs btn-danger" title="编辑">编辑</button>  -->
+                                         
+                      <button onclick="off({$me.id},this);" class="btn btn-xs btn-danger" title="点击上架">下架</button>
+                    <else/>
+                      <button onclick="on({$me.id},this);" class="btn btn-xs btn-primary" title="点击下架">上架</button>
+                    </if>
+
+                    </td>
+                  </tr>
+                </foreach>
+              </tbody>
+         </table>
+               
+         
+</block>
+<block name="js">
+   <script type="text/javascript">
+      function doDel(obj,id){
+            // Modal.confirm({msg:'确定要删除吗？'}).on(function(e){
+                // if (e) {
+                    $.ajax({
+                      type:"get",
+                      url:"__URL__/delMenu",
+                      data:"id="+id,
+                      dataType:"json",
+                      success:function (data){
+                        if(data.b){
+                          $(obj).parents("tr").remove();
+                        }
+                      },
+                      error:function () {
+                          
+                      }
+                    });
+                // }
+            // })
+        }
+        //执行下架
+    function off(id){
+      // Modal.confirm({msg:"确定下架吗？"}).on(function(e){
+      //   if(e){
+          $.ajax({
+            type:'GET',             //请求方式GET
+            url :'__URL__/off',           //ajax请求地址
+            data:'id='+id, //请求传递的参数
+            dataType:'json',        //预期服务器返回的数据类型
+            async : true,           //是否异步
+            success: function(res){
+              //alert(res.id);
+              if(res != "null"){
+                $("#button"+res.id).html("<button onclick='doDel(this,"+res.id+")' class='btn btn-xs btn-danger' title='删除'>删除</button>   <button onclick='on("+res.id+");' class='btn btn-xs btn-primary' title='点击下架'>上架</button>");
+                $("#change"+res.id).html("已下架");
+              }
+            },  //ajax成功后的回调函数
+          });
+      //   }
+      // }); 
+    }
+    //重新上架
+    function on(id){
+      // Modal.confirm({msg:"确定重新上架吗？"}).on(function(e){
+      //   if(e){
+          $.ajax({
+            type:'GET',             //请求方式GET
+            url :'__URL__/on',           //ajax请求地址
+            data:'id='+id, //请求传递的参数
+            dataType:'json',        //预期服务器返回的数据类型
+            async : true,           //是否异步
+            success: function(res){
+              //alert(res.id);
+              if(res != "null"){
+                $("#button"+res.id).html("<button onclick='doDel(this,"+res.id+")' class='btn btn-xs btn-danger' title='删除'>删除</button> <button onclick='off("+res.id+");' class='btn btn-xs btn-danger' title='点击上架'>下架</button>");
+                $("#change"+res.id).html("在售");
+              }
+            },  //ajax成功后的回调函数
+          });
+      //   }
+      // });
+    }
+   </script>
+</block>

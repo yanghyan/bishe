@@ -1,0 +1,56 @@
+
+﻿<extend  name="Seller/base" />
+<block name="main">
+
+            <div class="mem_t">店铺信息</div>
+            <table border="0" class="acc_tab" style="width:870px;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="td_l">店铺名称： </td>
+                <td>{$sh.shopname}</td>
+              </tr>
+              <tr>
+                <td class="td_l b_none">店铺地址：</td>
+                <td>
+					<if condition="($sh.address eq 1) ">小店区
+						<elseif condition="($sh.address eq 2)"/>迎泽区
+						<elseif condition="($sh.address eq 3)"/>杏花岭区
+						<elseif condition="($sh.address eq 4)"/>尖草坪区
+						<elseif condition="($sh.address eq 5)"/>万柏林区
+						<elseif condition="($sh.address eq 6)"/>晋源区
+					</if>
+				</td>
+              </tr>
+              <tr>
+                <td class="td_l b_none">详细地址：</td>
+                <td>{$sh.detail_add}</td>
+              </tr>
+              <tr>
+                <td class="td_l">所属类别：</td>
+                <td>{$sh.k}</td>
+              </tr>
+              <tr>
+                <td class="td_l b_none">商户类型：</td>
+                <td>
+					<if condition="($sh.shoptype heq '0') ">企业商户
+						<elseif condition="($sh.shoptype eq 1)"/>个体商户
+					</if>
+				</td>
+              </tr>
+              <tr>
+                <td class="td_l">状态：</td>
+                <td>
+					<if condition="($sh.state heq '0') ">暂停营业
+						<elseif condition="($sh.state eq 1)"/>审核中
+						<elseif condition="($sh.state eq 2)"/>审核通过
+					</if>
+				</td>
+              </tr>
+              <tr>
+                <td class="td_l b_none">注册时间：</td>
+                <td>{$sh.addtime|date="Y-m-d",###}</td>
+              </tr>
+            </table>
+               
+
+         
+</block>

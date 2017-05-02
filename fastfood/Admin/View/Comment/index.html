@@ -1,0 +1,138 @@
+<extend name="Base/base" />
+<block name="main">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+			<h1>
+				评论信息表
+				<small>preview of simple tables</small>
+			</h1>
+			<ol class="breadcrumb">
+				<li><a href="__MODULE__/Index/index"><i class="fa fa-dashboard"></i> 首页</a></li>
+				<li><a href="#">评论管理</a></li>
+				<li class="active">列表</li>
+			</ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title"><i class="fa fa-th"></i> 评论管理</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+					<div class="form-group">
+					<form action="__URL__/index" method="get" class="form-inline">
+						<input class="form-control" id="exampleInputName2" placeholder="评分" type="text" name="cscore" size="12">&nbsp;&nbsp;
+						<input class="form-control" id="exampleInputName2" placeholder="起始时间" type="text" name="ctime1" size="8" readonly onclick="layui.laydate({elem: this, festival: true})"> —
+						<input class="form-control" id="exampleInputName2" placeholder="结束时间" type="text" name="ctime2" size="8" readonly onclick="layui.laydate({elem: this, festival: true})">&nbsp;&nbsp;
+
+						<input type="submit" value="搜索" class="btn btn-primary">
+					</form>
+					</div>
+					<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+						  <th style="width:30px">ID</th>
+						  <th>用户ID</th>
+						  <th>店铺ID</th>
+						  <th>配送员ID</th>
+						  <th>店铺的评论内容</th>
+						  <th>配送员的评论内容</th>
+						  <th>评分</th>
+						  <th>评论时间</th>
+						  <th style="width:50px">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+				<foreach name="list" item="com">
+						<tr>
+						  <td>{$com.id}</td>
+						  <td>{$com.username}</td>
+						  <td>{$com.shopname}</td>
+						  <td>{$com.name}</td>
+						  <td>{$com.shop_content}</td>
+						  <td>{$com.deli_content}</td>
+						  <td>{$com.score}</td>
+						  <td>{$com.addtime|date="Y-m-d",###}</td>
+						  <td>
+							<button onclick="doDel({$com.id},this)" class="btn btn-xs btn-danger">删除</button>
+						  </td>
+						</tr>
+                </foreach>
+				</tbody>
+                  </table>
+				
+                </div><!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  <ul class="pagination pagination-sm no-margin pull-right">
+                     {$pageinfo}
+                  </ul>
+                </div>
+              </div><!-- /.box -->
+
+            </div><!-- /.col -->
+            
+          </div><!-- /.row -->
+         
+        </section><!-- /.content -->
+ </block>
+ <block name="myscript">
+	<script>
+	//执行删除
+	function doDel(id,bt){
+		Modal.confirm({msg:'确定要删除当前评论吗？'}).on(function(e){
+				if(e){
+					//执行Ajax发送并执行删除操作
+					$.ajax({
+						type:"GET",
+						url: '__CONTROLLER__/del',
+						data:"id="+id,
+						dataType:"json",
+						success:function(res){
+							if(res.b){
+								//删除节点
+								$(bt).parents("tr").remove();
+							}
+						}
+					});
+				}
+		   })
+	}
+		
+	//日期插件的相关内容
+	layui.use('laydate', function(){
+	  var laydate = layui.laydate;
+	  
+	  var start = {
+		min: laydate.now()
+		,max: '2099-06-16 23:59:59'
+		,istoday: false
+		,choose: function(datas){
+		  end.min = datas; //开始日选好后，重置结束日的最小日期
+		  end.start = datas //将结束日的初始值设定为开始日
+		}
+	  };
+	  
+	  var end = {
+		min: laydate.now()
+		,max: '2099-06-16 23:59:59'
+		,istoday: false
+		,choose: function(datas){
+		  start.max = datas; //结束日选好后，重置开始日的最大日期
+		}
+	  };
+	  
+	  document.getElementById('LAY_demorange_s').onclick = function(){
+		start.elem = this;
+		laydate(start);
+	  }
+	  document.getElementById('LAY_demorange_e').onclick = function(){
+		end.elem = this
+		laydate(end);
+	  }
+	  
+	});
+	</script>
+ </block>

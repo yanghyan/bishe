@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie6"><![endif]--><!--[if IE 7]><html class="ie7"><![endif]--><!--[if IE 8]><html class="ie8"><![endif]--><!--[if IE 9]><html class="ie9"><![endif]--><!--[if !IE]><!-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="//www.nuomi.com/static/common/img/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="renderer" content="webkit">
+
+
+		<title>美食美客</title>
+
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/global_20a287f.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common_38c5655.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/user_93e8dac.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/user_93e8dac.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome-ie7.min.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/login.css"/>
+
+		<!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/uni_login_merge_24c3446.css"/> -->
+	</head>
+
+	<body mon="page=login" class="gl-normal-screen">
+
+		<ul id="j-go-top" class="nav n-go-top" mon="area=right_anchor">
+			<li>
+				<a href="#" mon="element=gotop&position=0" class="item with-top-border go-top-2">
+					<span class="gotop-ico inner-ico">
+						<i class="fa fa-chevron-up fa-2x"></i>
+					</span>
+					<span class="inner-text">回到顶部</span>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" class="item" href="#">
+					<span class="question-ico inner-ico">
+						<i class="fa  fa-edit fa-2x"></i>
+					</span>
+					<span class="inner-text">问卷调查</span>
+				</a>
+			</li>
+		</ul>
+		<div class="p-login">
+			<div class="header">
+				<div class="wrap clearfix">
+				
+					<div class="logo">
+						<a href="//www.nuomi.com"></a>
+					</div>
+					<div class="login-text">登录</div>
+					<div class="reg-area">配送员端
+						<!-- <a href="__URL__/register" class="reg-btn">注册</a> -->
+					</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="wrap clearfix">
+					<div class="login-logo"></div>
+					<div class="login-area" id="j-loginArea">
+						<div class="title">美食美客配送员</div>
+							<div class="login" id="j-login">
+							<form class="login_user" action="__URL__/doLogin/s/peisong" method="post"  onsubmit="return doSubmit()"  <if condition="$info1!=''">style="display:none"<else/>style="display:block"</if>>
+								<p class="loginError">
+									<span class="errorpic" <if condition="$info!=''">style="display:block"<else/>style="display:none"</if>></span>
+									<span class="errorinfo" id="info"  <if condition="$info!=''">style="display:block"<else/>style="display:none"</if>>{$info}</span>
+								</p>
+<!-- 								<p class="loginSMS">
+									<a href="#">
+										<span>短信快捷登录</span>
+										<span class="phone"></span>
+									</a>
+								</p> -->
+								<p class="logincontent">
+									<span><i class="fa fa-user fa-2x"></i></span>
+									<span class="user">
+										<input type="text" name="username" class="pass-text-input pass-text-input-userName" autocomplete="off" placeholder="手机/邮箱/用户名"/>
+									</span>
+								</p>
+								<p class="logincontent">
+									<span><i class="fa fa-unlock-alt fa-2x"></i></span>
+									<span class="pwd">
+										<input type="password" name="pass" class="pass-text-input pass-text-input-userName" autocomplete="off" placeholder="密码"/>
+									</span>
+								</p>
+								<p class="loginpro">
+									<span>
+										<input  name="remberPass" class="pass-checkbox-input" checked="checked" type="checkbox">
+										<label>
+											下次自动登录
+										</label>
+									</span>
+									<span>
+										<a href="#">
+											登录遇到问题
+										</a>
+									</span>
+								</p>
+					
+								<p class="loginsub">
+									<input type="submit" value="登录"/>
+								</p>
+								<p class="loginother">
+									<a href="#">
+										<img src="__PUBLIC__/images/qq.jpg" title="qq登录" width="24px" height="24px"/>
+									</a>
+									<a href="#" class="weixin">
+										<img src="__PUBLIC__/images/weixin1.jpg" title="微信登录" height="24px"/>
+									</a>
+									<a href="#" class="weibo">
+										<img src="__PUBLIC__/images/weibo.jpg" title="新浪微博登录" height="24px"/>
+									</a>
+									<a href="#" class="renren">
+										<img src="__PUBLIC__/images/tengxun.jpg" title="腾讯微博登录" height="24px"/>
+									</a>
+								</p>
+							</form>
+							<!-- 手机号登录 -->
+							<form class="login_phone" action="__URL__/doPLogin" method="post"  onsubmit="return doPSubmit()" <if condition="$info1!=''">style="display:block"<else/>style="display:none"</if>  >
+							
+								<p class="loginError">
+									<span class="errorpic" <if condition="$info1!=''">style="display:block"<else/>style="display:none"</if>></span>
+									<span class="errorinfo" id="info1"  <if condition="$info1!=''">style="display:block"<else/>style="display:none"</if>>{$info1}</span>
+								</p>
+								<p class="logincontent">
+									<span><i class="fa  fa-mobile fa-2x"></i></span>
+									<span class="phonenum">
+										<input type="text" name="phone" class="pass-text-input pass-text-input-userName" autocomplete="off" placeholder="手机帐号" id="j_phone" />
+									</span>
+								</p>
+								<p class="logincontent1">
+									<span class="yzm">
+										<input type="text" name="ddmm" class="pass-text-input pass-text-input-userName" autocomplete="off" placeholder="动态密码"/>
+									</span>
+								</p>
+								<p class="logincontent2" onclick="sendPass()" id="send">
+									<a href="#"  class="sendyzm" id="senda">
+										发送动态密码
+									</a>
+								</p>
+								<p class="loginsubmit">
+									<input type="submit" value="登录"/>
+								</p>
+								<p class="loginnotice">
+									<span>
+										阅读并接受
+										<a href="#">
+											《百度用户协议》
+										</a>
+									</span>
+									<span class="denglu">
+										<a href="#">
+											账号密码登录
+										</a>
+									</span>
+								</p>
+								<p class="loginother">
+									<a href="#">
+										<img src="__PUBLIC__/images/qq.jpg" title="qq登录" width="24px" height="24px"/>
+									</a>
+									<a href="#" class="weixin">
+										<img src="__PUBLIC__/images/weixin1.jpg" title="微信登录" height="24px"/>
+									</a>
+									<a href="#" class="weibo">
+										<img src="__PUBLIC__/images/weibo.jpg" title="新浪微博登录" height="24px"/>
+									</a>
+									<a href="#" class="renren">
+										<img src="__PUBLIC__/images/tengxun.jpg" title="腾讯微博登录" height="24px"/>
+									</a>
+								</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w-footer-mini" alog-alias="bainuo-order-footermini" alog-group="bainuo-order-footermini">
+			<div class="wrap">
+				<div class="links">
+					<a href="//www.nuomi.com/about" class="link">关于美食美客</a><span>|</span>
+					<a href="//www.nuomi.com/help" class="link">常见问题</a><span>|</span>
+					<a href="javascript:;" class="link" id="j-tttel">违规投诉&amp;廉政举报</a><span>|</span>
+					<a href="//www.nuomi.com/help/api" class="link">开放平台</a><span>|</span>
+					<a href="//www.nuomi.com/about/eula" class="link">用户协议</a><span>|</span>
+					客服电话：<span class="tel">4006-888-887</span>（每天9:00 - 22:00）
+				</div>
+				<div class="site-info">
+					<span class="copyright">&copy;</span>2015&nbsp;msmk.com&nbsp;
+					<a href="http://www.miitbeian.gov.cn" class="link" target="_blank">京ICP证030173号</a>
+					&nbsp;京公网安备11010802014106号
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="__PUBLIC__/js/jquery-1.8.2.min.js"></script>
+	<!-- <script type="text/javascript" src="__PUBLIC__/js/getVerifyCode.js"></script> -->
+	<script type="text/javascript">
+		$(".loginSMS").click(function(){
+			$(".login_user").hide();
+			$(".login_phone").show();
+		});
+		$(".denglu").click(function(){
+			$(".login_phone").hide();
+			$(".login_user").show();
+		});
+		
+		$(".logincontent .user input").focus(function(){
+			$(this).parents("p").css("borderColor","#FF6699");
+		}).blur(function(){
+			$(this).parents("p").css("borderColor","#ddd");
+		});
+		
+		$(".logincontent .pwd input").focus(function(){
+			$(this).parents("p").css("borderColor","#FF6699");
+		}).blur(function(){
+			$(this).parents("p").css("borderColor","#ddd");
+		});
+		
+		$(".logincontent .phonenum input").focus(function(){
+			$(this).parents("p").css("borderColor","#FF6699");
+		}).blur(function(){
+			$(this).parents("p").css("borderColor","#ddd");
+		});
+		
+		$(".logincontent1 .yzm input").focus(function(){
+			$(this).parents("p").css("borderColor","#FF6699");
+		}).blur(function(){
+			$(this).parents("p").css("borderColor","#ddd");
+		});
+		// 当使用账号登录时
+		function doSubmit(){
+			 return checkUserName()&&checkPass();
+		}
+		function checkUserName(){
+			 var user = $("input[name='username']").val();
+			 if(user==""){
+			 	$(".loginError span").css("display","block");
+			 	$("#info").html("请填写账号信息");
+                return false;
+			 }
+			 // else if(user.match(/^[a-zA-Z0-9_]{3,12}$/)==null){
+			 // 	$(".loginError span").css("display","block");
+    //            	$("#info").html("账号信息不正确！");
+    //            	return false;
+	   //       }
+	         else{
+	         	$(".loginError span").css("display","none");
+	          	$("#info").html("");
+	           	return true;
+	         }
+		}
+		//检测密码
+	    function checkPass(){
+	        var pass = $("input[name='pass']").val();
+	         if(pass==""){
+	         	$(".loginError span").css("display","block");
+			 	$("#info").html("请填写密码");
+                return false;
+			 }else if(pass.match(/^[a-zA-Z0-9_]{3,18}$/)==null){
+			 	$(".loginError span").css("display","block");
+	            $("#info").html("密码不正确");
+	            return false;
+	        }else{
+	           $(".loginError span").css("display","none");
+	           $("#info").html("");
+	           return true;
+	        }
+	     }
+	     // 当使用电话登录时
+      	function doPSubmit(){
+      		return checkPhone()&&checkddmm();
+      	}
+      	// 检测电话
+      	function checkPhone(){
+          	var phone = $("input[name='phone']").val();
+          	if (phone=="") {
+          	  $(".loginError span").css("display","block");
+			  $("#info1").html("请填写手机号");
+              return false;
+          	}else if (phone.match(/^1[34578]\d{9}$/)==null) {
+          	  $(".loginError span").css("display","block");
+              $("#info1").html("手机号码格式不正确");
+              $("#info1").css("color","red");
+              return false;
+            }else{
+              $(".loginError span").css("display","none");
+              $("#info1").html("");
+              $("#info1").css("color","#fc0");
+              return true;
+            }
+              
+         }
+        function checkddmm(){
+         	var ddmm = $("input[name='ddmm']").val();
+         	if(ddmm==""){
+         	  $(".loginError span").css("display","block");
+			  $("#info1").html("请填写动态密码");
+			  $("#info1").css("color","red");
+              return false;
+         	}else{
+         	  $(".loginError span").css("display","none");
+              $("#info1").html("");
+              $("#info1").css("color","#fc0");
+              return true;
+         	}
+         }
+
+         // 发送动态密码
+         function sendPass(){
+         	//先检测一下手机号是否存在
+         	
+         	var phone = $("input[name='phone']").val();
+         	if (phone=="") {
+          	  $(".loginError span").css("display","block");
+			  $("#info1").html("请填写手机号");
+              return false;
+          	}else if (phone.match(/^1[34578]\d{9}$/)==null) {
+          	  $(".loginError span").css("display","block");
+              $("#info1").html("手机号码格式不正确");
+              return false;
+            }else{
+              //Ajax再发送信息
+               $(".loginError span").css("display","none");
+               $("#info1").html("");
+                $.ajax({
+                      type:"post",
+                      url:"__URL__/messageCode",
+                      data:"phone="+phone,
+                      dataType:"json",
+                      success:function (data){
+                      
+                        if(data.b){
+                        	console.log(data.c);
+		  					var time = 30;
+		                  	var timer = setInterval(function(){
+		                  		time--;
+			                  	$("#send").removeAttr("onclick");
+			                  	$("#senda").html("重新发送("+time+")");
+		                  	
+			                  	if (time==0) {
+			                  		clearInterval(timer);
+			                  		$("#send").attr("onclick","sendPass()");
+			                  		$("#senda").html("重新发送");
+			                  	}
+		          	
+		        		  },1000);
+		                }else{
+		                	console.log("错误码为："+data.m);
+		                	alert("短信发送失败，请重试！");
+		                }
+
+                      },
+                      error:function () {
+                          
+                      }
+                 });
+         		return false;
+         }
+        }
+	</script>
+</html>

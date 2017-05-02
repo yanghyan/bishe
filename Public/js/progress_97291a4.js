@@ -1,0 +1,1 @@
+define("merchants:widget/settled/progress/progress.js",function(e,s,t){t.exports=Widget.extend({el:".settled-progress",events:{},channels:{"progress change":"setPhase"},init:function(){},setPhase:function(e,s){this.$el.find("li").removeClass("active").slice(0,s).addClass("active")}})});

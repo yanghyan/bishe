@@ -1,0 +1,136 @@
+.indent{
+	background-color:#ddd;
+	margin-bottom: 20PX;
+}
+
+.indent .head{
+	font-size: 20px;
+	margin-left: 50px;
+	font-weight: bold;
+	
+}
+
+.indent .total{
+	float: right;
+	margin-right: 20px;
+	color: #FF6699;
+	font-size: 16px;
+}
+
+.indent ul li{
+	height:30px;
+	line-height: 30px;
+	margin-left: 50px;
+}
+.head{
+	margin:20px;
+}
+.top{
+	background-color:#ddd;
+	height:30px;
+	line-height:30px;
+}
+
+.top-left{
+	float:left;
+	margin-left:15px;
+}
+
+.view-switcher{
+	float:right;
+	margin-right:15px;
+}
+.paylist{
+	margin-bottom:20px;
+}
+.paylist1{
+	margin-top:70px;
+}
+
+#baidulbspay_view_pingtai{
+	margin-bottom:20px;
+}
+div.pay-view div.line div.pay label.img div.logo {
+	background-image:url(../images/banklist_9db61e8.jpg);
+	width:110px;
+	height:27px
+}
+div.pay-view div.line div.pay {
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	float:left;
+	width:190px;
+	margin-top:1px
+}
+div.pay-view div.line div.pay.placeholder {
+	height:1px
+}
+div.pay-view div.line div.pay label.img {
+	border:1px solid #ddd;
+	width:110px;
+	height:27px;
+	display:inline-block;
+	margin-left:8px;
+	cursor:pointer;
+	overflow:hidden
+}
+div.pay-view div.line div.pay.kuaijie label.img div.kuaijie {
+	display:block
+}
+div.pay-view div.line div.pay label.img div {
+	float:left
+}
+.radio1 {
+	float:left;
+	margin-top:8px
+}
+
+a.view-switcher {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	/*position:relative;*/
+	height:28px;
+	background-color:#ddd;
+	border-top:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:-2px;
+	cursor:pointer
+}
+
+a.view-switcher h1.pays-name {
+	display:inline-block;
+	cursor:inherit;
+	margin-left:42px;
+	font-weight:700;
+	font-size:14px;
+	line-height:28px
+}
+
+#show{
+	float:left;
+	margin-left:20px;
+	margin-top:6px;
+	cursor:pointer
+}
+.hr{
+	margin-top:160px;
+	border-bottom:3px solid #ddd;
+}
+#qurenPay{
+	position:relative;
+	margin-top:30px;
+	margin-bottom:100px;
+}
+
+.warning{
+	width:1000px;
+	height:350px;
+	border:2px solid #FF6699;
+}
+
+#fanhui{
+	position:relative;
+	margin-top:30px;
+}

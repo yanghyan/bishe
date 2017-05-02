@@ -1,0 +1,251 @@
+<extend name="Base/base"/>
+<block name="main">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+           标签信息输出表
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="#">标签信息</a></li>
+            <li class="active">列表</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title"><i class="fa fa-th"></i>标签信息管理</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+				<form class="form-inline" action="__CONTROLLER__/index" method="get">
+				  <div class="form-group">
+					<div class="input-group">
+					  <input type="text" name="tag" class="form-control" id="exampleInputAmount" placeholder="标签名"/>
+					</div>
+					&nbsp;&nbsp;
+					<div class="input-group">
+						<label class="sr-only"  for="tag_kind">标签标签</label>
+						<select class="form-control" name="tag_kind">
+						  <option value="0">--请选择标签类别--</option>
+						  <option value="1">菜品标签</option>
+						  <option value="2">位置区域</option>
+						  <option value="3">价格区域</option>                    
+						</select>
+					</div>
+				  </div>
+				  <input type="submit" class="btn btn-primary" value="搜索"/>
+				</form>
+				<br/>
+                  <table id="tid"  width="300px" class="table table-bordered table-hover">
+					<thead>
+						<tr>
+						  <th style="width:60px">ID</th>
+						  <th>标签名</th>
+						  <th>所属标签类</th>
+						  <th>添加时间</th>
+						  <th>操作</th>
+						</tr>
+					<thead>
+					<tbody>
+					   <foreach name="taglist" item="tag">
+							
+							<tr class="tag{$tag.id}">
+							  <td>{$tag.id}</td>
+							  <td>{$tag.tag}</td>
+							  <td><if condition="($tag.tag_kind eq 1) ">菜品标签<elseif condition="($tag.tag_kind eq 2)"/>位置区域<elseif condition="($tag.tag_kind eq 3)"/>价格区域</if></td>
+							  <td>{$tag.addtime}</td>
+							  <td>
+								 <button onclick="doDel({$tag.id},this)" class="btn btn-xs btn-danger">删除</button> &nbsp;
+								<button onclick="doEdit({$tag.id})" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#updatetagModal">编辑</button>
+								</td>
+							  </td>
+							</tr>
+					   </foreach>
+				   </tbody>
+                  </table>
+                </div><!-- /.box-body -->
+                <div class="box-footer clearfix">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#addtagModal">添加标签</button>
+					  <ul class="pagination pagination-sm no-margin pull-right">
+						 <nav aria-label="Page navigation">
+						   {$pageinfo}
+						</nav>
+					</ul>
+                </div>
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+            
+          </div><!-- /.row -->
+         
+        </section><!-- /.content -->
+</block>
+<block name="myscript">
+	<!--添加-->
+	 <div class="modal fade" id="addtagModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">添加标签</h4>
+          </div>
+          <div class="modal-body">
+            <form id="addtag">
+				<div class="form-group">
+					<label for="recipient-name" class="control-label">标签名：</label>
+					<input type="text"  name="tag" class="form-control" id="recipient-name" onblur="checktag()">
+				</div>
+				<div class="form-group">
+					<label for="recipient-name" class="control-label">标签类别：</label>
+					<select class="form-control" name="tag_kind">
+					  <option value="">--请选择标签类别--</option>
+					  <option  value="1">菜品标签</option>
+					  <option  value="2">位置区域</option>
+					  <option  value="3">价格区域</option>                    
+					</select>
+				</div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" onclick="doAdd()" class="btn btn-primary">添加</button>
+          </div>
+        </div>
+      </div>
+    </div>	 
+	<div class="modal fade" id="updatetagModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">修改标签</h4>
+          </div>
+          <div class="modal-body">
+            <form id="updatetag">
+				<input type="hidden" id="editid" name="id"/>
+				<div class="form-group">
+					<label for="recipient-name" class="control-label">标签名：</label>
+					<input type="text" id="edittag" name="tag" class="form-control" id="recipient-name">
+				</div>
+				<div class="form-group">
+					<label for="recipient-name" class="control-label">标签类别：</label>
+					<select class="form-control" name="tag_kind">
+					  <option  value="">--请选择标签类别--</option>
+					  <option id="tag1" value="1">菜品标签</option>
+					  <option id="tag2" value="2">位置区域</option>
+					  <option id="tag3" value="3">价格区域</option>                    
+					</select>
+				</div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" onclick="doUpdate()" class="btn btn-primary">修改</button>
+          </div>
+        </div>
+      </div>
+    </div>	 
+	<script type="text/javascript">
+		function doDel(id,obj){
+			Modal.confirm({msg:'确定要删除当前标签吗？'}).on(function(e){
+                if (e) {
+					$.ajax({
+						type:'GET',
+						url :'__CONTROLLER__/del',
+						data:'id='+id,
+						dataType:'json',
+						success:function(res){
+							if(res.b){
+								$(obj).parents("tr").remove();
+							}else{
+								alert(res.info);
+							}
+						}
+					});
+				}
+			});
+		}
+			
+		function doAdd(){
+			$.ajax({
+				type:'POST',
+				url: '__CONTROLLER__/insert',
+				data:$("#addtag").serialize(),
+				dataType:'json',
+				success:function(res){
+					if(res.b){
+						var str = '<tr class="tag'+res.id+'"><td>'+res.id+'</td>';
+                            str += '<td>'+res.tag+'</td>';
+							str += '<td>'+((res.tag_kind == 1)?"菜品标签":((res.tag_kind == 2)?"位置区域":((res.tag_kind == 3)?"价格区间":"")))+'</td>';
+							str += '<td>'+res.addtime+'</td>';
+							str += '<td><button onclick="doDel('+res.id+',this)" class="btn btn-xs btn-danger">删除</button>&nbsp;';
+							str += '<button onclick="doEdit('+res.id+')" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#updatetagModal">编辑</button> </td></tr>';
+							$(str).appendTo("#tid tbody");
+					}else{
+						Modal.alert({msg:res.info,title:'添加标签',btnok:'确定',btncl:'取消'});
+					}
+				}
+			});
+			$("#addtagModal").modal("hide");
+			$("#addtagModal").on("hidden.bs.modal",function(){
+				$("#addtag")[0].reset();
+			});	
+		}
+		
+		function doEdit(id){
+			$.ajax({
+				type:'POST',
+				url :'__CONTROLLER__/edit',
+				data:'id='+id,
+				dataType:'json',
+				success:function(res){
+					$("#editid").val(res.id);
+					$("#edittag").val(res.tag);
+					
+					if(res.tag_kind == "1"){
+						$("#tag1").attr("selected",true);
+					}
+					if(res.tag_kind == "2"){
+						$("#tag2").attr("selected",true);
+					}
+					if(res.tag_kind == "3"){
+						$("#tag3").attr("selected",true);
+					}
+				}
+			});
+			$("#updatetagModal").on("hidden.bs.modal",function(){
+				$("#updatetag")[0].reset();
+			});
+		}
+		
+		function doUpdate(){
+			$.ajax({
+				type:'POST',
+				url :'__CONTROLLER__/update',
+				data:$("#updatetag").serialize(),
+				dataType:'json',
+				success:function(res){
+					if(res.b){
+						$(".tag"+res.id).children().eq(1).html(res.tag);
+						if(res.state == "1"){
+							$(".tag"+res.id).children().eq(2).html("菜品标签");
+						}
+						if(res.state == "2"){
+							$(".tag"+res.id).children().eq(2).html("位置区域");
+						}
+						if(res.state == "3"){
+							$(".tag"+res.id).children().eq(2).html("价格区间");
+						}
+					}else{
+						Modal.alert({msg:res.info,title:'修改标签',btnok:'确定',btncl:'取消'});
+					}
+				}
+			});
+			$("#updatetagModal").modal("hide");
+		}
+		
+	</script> 
+</block>

@@ -1,0 +1,503 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>    
+    <head>        
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lt IE 9]>
+        <script src="/bishe/CLY/Public/js/html5shiv.js"></script>
+        <![endif]-->
+        <title>美食美客商户中心</title>     
+        <!-- <link rel="stylesheet" type="text/css" href="/bishe/CLY/Public/css/normalize-css-pkg__7094b92.css" /> -->
+        <link rel="stylesheet" type="text/css" href="/bishe/CLY/Public/css/lbc-base-pkg__78af025.css" />
+        <link rel="stylesheet" type="text/css" href="/bishe/CLY/Public/css/login-package__aa6cd1b.css" />      
+        <link rel="stylesheet" type="text/css" href="/bishe/CLY/Public/css/base_acf5926.css" />
+        <link rel="stylesheet" type="text/css" href="/bishe/CLY/Public/css/layout_8479b0d.css" />
+        <link rel="stylesheet" type="text/css" href="/bishe/CLY/Public/css/wmbos.widget_4191642.css" /></head>
+        <style type="text/css">
+            input[type="text"]{
+                height: 36px;
+                width:350px;
+                border: 1px solid #ddd;
+                font-size: 14px;
+                color: #000;
+                text-indent: .5em;
+            }
+            input[type="password"]{
+                height: 36px;
+                width:350px;
+                border: 1px solid #ddd;
+                font-size: 14px;
+                color: #000;
+                text-indent: .5em;
+            }
+           .login-content-box{
+                width: 100%;
+                height:1400px;
+           }
+           .row{
+            padding: 10px;
+            height:60px;
+            line-height:60px;
+           }
+        </style>
+    </head>    
+     <body>
+        <!-- DP监控 -->
+        <!-- <script> alog('speed.set', 'ht', +new Date); </script> -->
+        <header class="header-box-background">
+            <section class="header-box">
+                <hgroup class="logo-box">
+                    <div class="nuomi-logo"><a href="/"></a></div>
+                    <h2 class="merchant-logo"><a href="/">商户版</a></h2>
+                </hgroup>
+            </section>
+        </header>
+        <!--[if lt IE 9]>
+        <section class="login-content-box ielt9">
+        <![endif]-->
+        <!--[if gte IE 9]><section class="login-content-box"><![endif]-->
+        <!--[if !IE]><!-->
+        <section class="login-content-box">
+            <div class="sp-body">
+               <div class="settled-progress">
+                    <ul>
+                        <li class="active">
+                        1.填写基本信息</li>
+                        <li>
+                        <span class="arrow"></span>
+                        2.提交完成</li>
+                    </ul>
+                
+                <!-- xinxin -->
+                    <div class="ui-width" style="background-color:#fff;" >
+                        <header class="panel-head">填写基本信息<span>（带<em style="color:red">*</em>为必填，为了便于审核通过，请如实填写）</span></header>
+                        <form  action="/bishe/CLY/index.php/Home/Public/sinsert" method="post" onsubmit="return doSubmit()" enctype="multipart/form-data">
+                        <div class="form join-table" style="width:600px;margin:0 auto;">
+                        <div style="text-align:left">
+                            <div class="row">
+                            <div class="" data-node="half">
+                            <label><span class="required">*</span>店铺位置：</label>
+                            <select class="form-control" >
+                                  <option value="">--请选择省份--</option>
+                                  <option value="1" selected>山西省</option>
+                             </select>
+                              <select class="form-control" >
+                                  <option value="">--请选择市区--</option>
+                                  <option value="1" selected>太原市</option>
+                             </select>
+                            <select class="form-control" name="address">
+                                  <option value="">--请选择区域--</option>
+                                  <option value="1" selected>小店区</option>
+                                  <option value="2">迎泽区</option>
+                                  <option value="3">杏花岭区</option>
+                                  <option value="4">尖草坪区</option>
+                                  <option value="5">万柏林区</option>
+                                  <option value="6">晋源区</option>
+                             </select>
+                             <span style="font-size:14px;color:red;margin-left:5px;" id="address"></span>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="" data-node="half">
+                                <label><span class="required">*</span>详细地址：</label>
+                                <input type="text" value="" class="address" placeholder="xx(区)县xx路xx号" name="detail_add" maxlength="50">
+                                    <span style="font-size:12px;color:#fc0;margin-left:5px;" id="detail_add"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                            <div class="half" data-node="half">
+                            <label><span class="required">*</span>商户名称：</label>
+                            <input type="text" value="" placeholder="公司或餐厅名称" name="shopname" maxlength="50" data-check="shop_name" data-errormsg="请填写商户名称，不能超过20个字符">
+                            <span style="font-size:12px;color:#fc0;margin-left:5px;" id="shopname"></span>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="half" data-node="half">
+                            <label><span class="required">*</span>商户类型：</label>
+                             <input  type="radio" name="shoptype"  value="1" checked  style="position: static;visibility:visible" checked>个体商户                          
+                             <input type="radio" name="shoptype"  value="0" style="position: static;visibility:visible">企业商户
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="half" data-node="half">
+                            <label><span class="required">*</span>经营范围：</label>
+                            <select class="form-control" name="kind" id="kind">
+                                <option value="">--请选择类别--</option>
+                                <?php if(is_array($kind)): foreach($kind as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["classname"]); ?></option><?php endforeach; endif; ?>               
+                             </select>
+                              <span style="font-size:12px;color:#fc0;margin-left:5px;" id="kspan"></span>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="half" data-node="half">
+                            <label class="name"><span class="required">*</span>用&nbsp;户&nbsp;名&nbsp;：</label>
+                            <input type="text" value="" placeholder="填写联系人" name="username" maxlength="20" >
+                            <span style="font-size:12px;color:#fc0;margin-left:5px;" id="user"></span>
+
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="half" data-node="half">
+                            <label><span class="required">*</span>联系电话：</label>
+                            <input type="text" value="" placeholder="填写手机号" name="phone" maxlength="11" data-check="contact_phone" data-errormsg="请填写11位手机号">
+                            <span style="font-size:12px;color:#fc0;margin-left:5px;" id="phone"></span>
+                            </div>
+                            </div>
+                             <div class="row">
+                            <div class="half" data-node="half">
+                            <label><span class="required">*</span>登录密码：</label>
+                            <input type="password" class="form-control" name="pass" placeholder="请填写登录密码" >
+                            <span style="font-size:14px;color:red;margin-left:10px;" id="pass"></span>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="half" data-node="half">
+                            <label><span class="required">*</span>确认密码：</label>
+                            <input type="password" class="form-control" name="qrpass" placeholder="请填写确认密码"  >
+                            <span style="font-size:14px;color:red;margin-left:10px;" id="qrpass"></span>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="half" data-node="half">
+                            <label><span class="required">*</span>图片信息：</label>
+                                
+                                  <label>1.店铺门脸图</label>                              
+                                
+                                  <label style="margin-left:80px;">2.店内环境图</label>
+                                
+                            </div>
+                            </div>
+                            <div class="">                           
+                                <div style="float:left;margin-left:80px;">
+                                     <div id="previewDoor">
+                                        <img id="imgheadDoor" border="0" src="/bishe/CLY/Public/images/photo_icon.png" width="90" height="90" onclick="$('#previewImgDoor').click();">
+                                     </div>         
+                                     <input type="file" onchange="previewImage(this,'Door')" style="display: none;" id="previewImgDoor" name="door_pic">
+                                </div>
+                                <div style="float:left;margin-left:80px;">
+                                    <div id="previewEnv">
+                                        <img id="imgheadEnv" border="0" src="/bishe/CLY/Public/images/photo_icon.png" width="90" height="90" onclick="$('#previewImgEnv').click();">
+                                     </div>         
+                                      <input type="file" onchange="previewImage(this,'Env')" style="display: none;" id="previewImgEnv" name="env_pic">
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row" style="float:left">
+                            <div class="half" data-node="half">
+                            <label><span class="required">*</span>资质信息：</label>
+                                 <input type="radio" name="info"  value="0" style="position: static;visibility:visible" checked><label>营业执照</label>
+                                  <input type="radio" name="info"  value="1"  style="position: static;visibility:visible"><label>餐饮服务许可证</label>
+                                  <input type="radio" name="info"  value="2" style="position: static;visibility:visible"><label>其他资质</label>
+                                  <input type="radio" name="info"  value="3" style="position: static;visibility:visible"><label>无资质</label>
+                                
+                            </div>
+                            </div>
+                            <div class="" style="float:left;width:400px;margin-left:80px;">                           
+                               <div id="previewInfo">
+                                    <img id="imgheadInfo" border="0" src="/bishe/CLY/Public/images/photo_icon.png" width="90" height="90" onclick="$('#previewImgInfo').click();">
+                                </div>         
+                                <input type="file" onchange="previewImage(this,'Info')" style="display: none;" id="previewImgInfo" name="info_pic">
+                            </div>
+                           <div class="row" style="float:left;width:400px;margin-bottom:30px;text-align:center">
+                            <div class="half" data-node="half">
+                                <input type="submit" name="" value="提交申请"  style="width:140px;height:35px;background-color:#ff2d4b;border-radius: 5px;text-align: center;line-height: 35px;color: #fff;cursor:pointer;">                                 
+                            </div>
+
+                            </div>
+                        
+                    </div>
+
+                    </div>
+                    </form>
+                <!-- xinxi -->
+                </div>
+
+            </div>
+            
+        </section>
+
+        <footer class="footer-box-background">
+            <div class="footer-bd">
+                <ul class="footer-help">
+                    <li>
+                        <a class="first" href="javascript:void(0);">
+                            <h4>电话验证</h4>
+                            <span>400-028-0088</span>
+                        </a>
+                    </li>
+                    <li class="divide"></li>
+                    <li>
+                        <a class="second" href="javascript:void(0);">
+                            <h4>商家咨询( 9:00-22:00 )</h4>
+                            <span>4006-028-111</span>
+                        </a>
+                    </li>
+                    <li class="divide"></li>
+                    <li>
+                        <a class="third" href="javascript:void(0);">
+                            <h4>商家入驻热线( 9:00-18:00 )</h4>
+                            <span>4009-208-258</span>
+                        </a>
+                    </li>
+                    <li class="divide"></li>
+                    <li>
+                        <a class="last" href="javascript:void(0);">
+                            <h4>廉政邮箱</h4>
+                            <span>BDNM_jiancha@baidu.com</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-ft">
+                <p class="link">
+                    <a href="http://www.nuomi.com/about" target="_blank">关于糯米</a>
+                    <b>|</b>
+                    <a href="http://www.nuomi.com/intention" target="_blank">市场合作</a>
+                    <b>|</b>
+                    <a href="http://b.nuomi.com" target="_blank">商家后台手机版</a>
+                    <b>|</b>
+                    <a href="http://help.nuomi.com/commonQuestion.html" target="_blank">常见问题</a>
+                </p>
+
+                <p class="copyright">
+                    <span title="SJSWT39-170.opi.com">&copy;</span>2015 nuomi.com
+                    <a href="http://www.miitbeian.gov.cn" target="_blank">京ICP证060807号 </a> 京公网安备110105006181号
+                    <a href="http://s0.nuomi.bdimg.com/img/license.jpg" target="_blank">工商注册号110108009499245</a>
+                </p>
+            </div>
+        </footer>
+
+        <div class="" id="account-info-dialog" style="display: none;">
+    <div class="alert alert-warning" role="alert">此手机号绑定多个账号，请选择账号登录</div>
+    <div class="account-info-list">
+
+    </div>
+</div>
+<div class="" id="ztc-info-dialog" style="display: none;">
+    <div class="account-info-list">
+
+    </div>
+</div>        
+    <div id="unbind-account-dialog" style="display: none;">
+    <h3>手机号暂未绑定任何账号，不能直接登录</h3>
+    <button class="btn btn-major-min bind-account" type="button">绑定已有账号</button>
+    <button class="btn btn-major-min register" type="button">去注册</button>
+</div>
+     
+      
+</body>  
+<script src="/bishe/CLY/Public/js/jquery-1.8.2.min.js"></script>
+ <script type="text/javascript">
+          //表单提交限制
+          function doSubmit() {
+            return checkArea()&&checkShopName()&&checkKind()&&checkUserName()&&checkPhone()&&checkPass()&&checkRPass()&&DoorPic();
+          }
+          // 检测详细地址
+          function checkArea() {
+              var detail_add = $("input[name='detail_add']").val();
+              if (detail_add=="") {
+                 $("#detail_add").html("请填写详细地址");
+                 $("#detail_add").css("color","red");
+                 return false;
+              }else{
+                 $("#detail_add").html("");
+                 $("#detail_add").css("color","#fc0");
+                 return true;
+              }
+          }
+          // 检测商户名称
+          function checkShopName(){
+            var shopname = $("input[name='shopname']").val();
+            if(shopname==""){
+                 $("#shopname").html("请填写商户名称");
+                 $("#shopname").css("color","red");
+                 return false;
+             }else{
+                 $("#shopname").html("");
+                 $("#shopname").css("color","#fc0");
+                 return true;
+             }
+          }
+          //检测用户名       
+          function checkUserName() {
+            var user = $("input[name='username']").val();
+            if(user.match(/^[a-zA-Z0-9_]{5,12}$/)==null){
+                 $("#user").html("5-12位字母、数字或下划线");
+                 $("#user").css("color","red");
+                return false;
+            }else if(user.match(/(^\_)|(\__)|(\_+$)/)){
+                $("#user").html("用户名首尾不能出现下划线\'_\'");
+                $("#user").css("color","red");
+                return false;
+            }else if(user.match(/^\d+\d+\d$/)){
+                 $("#user").html("用户名不能全为数字");
+                 $("#user").css("color","red");
+                return false;
+            }else{
+                 $("#user").html("");
+                 $("#user").css("color","#fc0");
+                 return true;
+            }
+          }
+          //检测邮箱
+          function checkEm() {
+            var email = $("input[name='email']").val();
+            $("#email").html("邮箱格式为：xxx@xx.xx");
+            $("#email").css("color","#fc0");
+          }
+
+          //检测密码
+          function checkPass() {
+             var pass = $("input[name='pass']").val();
+            if(pass.match(/^(.+){6,18}$/)==null){
+                 $("#pass").html("密码长度为6-18位");
+                 $("#pass").css("color","red");
+                return false;
+            }else if(pass.match(/^\d+\d+\d$/)){
+                 $("#pass").html("密码不能全为数字");
+                 $("#pass").css("color","red");
+                return false;
+            }else{
+                 $("#pass").html("");
+                 $("#pass").css("color","#fc0");
+                 return true;
+            }
+          }
+          function checkRPassWd() {
+            var pass = $("input[name='qrpass']").val();
+            $("#qrpass").html("请再次输入密码");
+            $("#qrpass").css("color","#fc0");
+          }
+          function checkRPass() {
+            var pass   = $("input[name='pass']").val();
+            var qrpass = $("input[name='qrpass']").val();
+            if (qrpass=="") {
+                $("#qrpass").html("请再次输入密码");
+                $("#qrpass").css("color","red");
+                return false;
+            }else  if (pass!=qrpass) {
+                $("#qrpass").html("确认密码与密码不一致");
+                $("#qrpass").css("color","red");
+                return false;
+            }else{
+                 $("#qrpass").html("");
+                $("#qrpass").css("color","red");
+                return true;
+            }
+          }
+           //检测手机
+          function checkPhone(){
+              var phone = $("input[name='phone']").val();
+              if (phone.match(/^1[34578]\d{9}$/)==null) {
+                $("#phone").html("请输入正确的电话格式");
+                $("#phone").css("color","red");
+                return false;
+              }else{
+                $("#phone").html("");
+                $("#phone").css("color","#fc0");
+                return true;
+              }
+            
+          }
+            // 判断用户是否选择了经营范围
+            function checkKind(){
+                var v =document.getElementById("kind").value; 
+                if(v==""){
+                     $("#kspan").html("请选择经营范围");
+                     $("#kspan").css("color","red");
+                     return false;
+                }else{
+                     $("#kspan").html("");
+                     $("#kspan").css("color","#fc0");
+                     return true;
+                }
+            }
+          // 判断是否有图片上传
+          function DoorPic() {
+               var f=document.getElementById("previewImgDoor").value;
+                if(f==""){ 
+                    alert("请上传店铺门脸图");
+                    return false;
+                }else if(!/\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(f)){
+                  alert("图片类型必须是.gif,jpeg,jpg,png中的一种")
+                  return false;
+                }
+         }
+        function EnvPic() {
+               var f=document.getElementById("previewImgEnv").value;
+                if(f==""){ 
+                    alert("请上传店内环境图");
+                    return false;
+                }else if(!/\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(f)){
+                  alert("图片类型必须是.gif,jpeg,jpg,png中的一种")
+                  return false;
+                }
+         }
+         function InfoPic() {
+               var f=document.getElementById("previewImgInfo").value;
+                if(f==""){ 
+                    alert("请上传资质信息图");
+                    return false;
+                }else if(!/\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(f)){
+                  alert("图片类型必须是.gif,jpeg,jpg,png中的一种")
+                  return false;
+                }
+         }
+
+            //图片上传预览    IE是用了滤镜。
+        function previewImage(file,name)
+        {
+          var MAXWIDTH  = 90; 
+          var MAXHEIGHT = 90;
+          var div = document.getElementById('preview'+name);
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img id=imghead'+name+'  onclick=$("#previewImg'+name+'").click()>';
+              var img = document.getElementById('imghead'+name);
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead'+name+'>';
+            var img = document.getElementById('imghead'+name);
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+
+      </script>   
+</html>

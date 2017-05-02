@@ -1,0 +1,83 @@
+﻿.x-a-none{
+    text-decoration:none
+}
+.x-a-none:hover,.x-a-none:active{
+    text-decoration:none
+}
+.x-opacity{
+    -ms-filter:alpha(Opacity=50);
+    filter:alpha(opacity=50);
+    -moz-opacity:.5;
+    -khtml-opacity:.5;opacity:.5
+}
+.menu-filter-wrapper .menu-filter{
+    background:#fafafa;
+    -moz-box-shadow:1px 1px 3px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:1px 1px 3px 0 rgba(0,0,0,.2);
+    -o-box-shadow:1px 1px 3px 0 rgba(0,0,0,.2);
+    -ms-box-shadow:1px 1px 3px 0 rgba(0,0,0,.2);
+    box-shadow:1px 1px 3px 0 rgba(0,0,0,.2);
+    z-index:0;
+    position:relative;margin-bottom:20px
+}
+.menu-filter-wrapper .menu-filter .bottomArr{
+    background:#fafafa url(../images/arrow_72b532f.png) center no-repeat;
+    position:absolute;width:100%;height:20px;bottom:0;cursor:pointer;display:none
+}
+.menu-filter-wrapper .menu-filter .bottomArr.upArr{
+    background-image:url(../images/arrow_up_7b9ff80.png)
+}
+.menu-filter-wrapper .menu-filter.hasArr{
+    padding-bottom:28px
+}
+.menu-filter-wrapper .menu-filter.hasArr .bottomArr{display:block}
+.menu-filter-wrapper .menu-filter.overHidden{overflow:hidden}
+.menu-filter-wrapper .menu-filter-fix .menu-filter{
+    margin-bottom:0;-moz-box-shadow:0 0 rgba(0,0,0,0);
+    -webkit-box-shadow:0 0 rgba(0,0,0,0);
+    -o-box-shadow:0 0 rgba(0,0,0,0);
+    -ms-box-shadow:0 0 rgba(0,0,0,0);
+    box-shadow:0 0 rgba(0,0,0,0)
+}
+.menu-filter-wrapper .menu-filter-fix .menu-filter .filter-item,.menu-filter-wrapper .menu-filter .filter-item{
+    float:left;
+    text-align:left;
+    overflow:hidden;
+    text-decoration:none;
+    width:115px;height:40px;
+    line-height:40px
+}
+.menu-filter-wrapper .menu-filter-fix .menu-filter .filter-item .item-name,.menu-filter-wrapper .menu-filter .filter-item .item-name{
+    display:inline-block;
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:14px;
+    color:#333;
+    letter-spacing:1px
+}
+.menu-filter-wrapper .menu-filter-fix .menu-filter .filter-item .item-name.cur,.menu-filter-wrapper .menu-filter .filter-item .item-name.cur{
+    background-color:#FF2D4B;color:#fff
+}
+.menu-filter-wrapper .menu-filter-fix .menu-filter .filter-item .item-name.menu-hover,.menu-filter-wrapper .menu-filter .filter-item .item-name.menu-hover{
+    color:#ff2d4b
+}
+.menu-filter-wrapper .menu-filter-fix .menu-filter .filter-item .item-num,.menu-filter-wrapper .menu-filter .filter-item .item-num{
+    font-style:normal;
+    color:#333;
+    display:none
+}
+.menu-filter-wrapper .menu-filter-fix{
+    position:fixed;
+    top:0;z-index:500;
+    width:690px;
+    -moz-box-shadow:0 1px 5px 0 rgba(0,0,0,.4);
+    -webkit-box-shadow:0 1px 5px 0 rgba(0,0,0,.4);
+    -o-box-shadow:0 1px 5px 0 rgba(0,0,0,.4);
+    -ms-box-shadow:0 1px 5px 0 rgba(0,0,0,.4);
+    box-shadow:0 1px 5px 0 rgba(0,0,0,.4);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);transform:rotate(180deg)
+}

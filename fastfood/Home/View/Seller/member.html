@@ -1,0 +1,34 @@
+<extend  name="Seller/base" />
+<block name="main">
+        <div class="mem_t">会员信息</div>
+        <table border="0" class="acc_tab" style="width:870px;" cellspacing="0" cellpadding="0">
+               <thead>
+                  <tr>
+                    <th>会员名</th>
+                    <th >性别</th>                     
+                    <th>电话</th>
+                    <th>邮箱</th>                   
+                    <th>共计消费(元)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <foreach name="list" item="me">
+                  <tr align="center">
+                    <td>{$me.username}</td>
+                    <td><if condition="($me.sex eq 1) ">男<elseif condition="($me.sex heq '0') "/>女</if></td>
+                    <td>{$me.phone}</td>
+                    <td>{$me.email}</td>                   
+                    <td>{$me.sum}</td>
+                    
+                  </tr>
+                </foreach>
+              </tbody>
+         </table>
+               
+         
+</block>
+<block name="js">
+   <script type="text/javascript">
+
+   </script>
+</block>
